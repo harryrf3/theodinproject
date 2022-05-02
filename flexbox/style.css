@@ -1,0 +1,69 @@
+/* 
+  **************************************************
+  * Flex Container Properties                      *
+  **************************************************
+  * flex-direction
+  * flex-wrap
+  * flex-flow
+  * justify-content
+  * align-items
+  * align-content
+  **************************************************
+  * Flex Item Properties                           *
+  **************************************************
+  * order
+  * flex-grow
+  * flex-shrink
+  * flex-basis
+  * align-self
+  **************************************************
+  * The Axes                                       *
+  **************************************************
+  * Row ********************************************
+  **************************************************
+  * Main Axis - flex-direction: row (horizontal)   *
+  * Cross Axis - flex-direction: row (vertical)    *
+  **************************************************
+  * Column *****************************************
+  **************************************************
+  * Main Axis - flex-direction: column (horizontal *
+  * Cross Axis - flex-direction: column (vertical) *
+  **************************************************
+*/
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.container div {
+  border: 1px solid black;
+  background: #ccc;
+  height: 80px;
+}
+
+.item {
+  flex: 1;
+  /* flex-grow: 1; */
+}
+
+.top .two {
+  flex: 3;
+}
+
+
+.bottom .two {
+  flex: 3;
+}
