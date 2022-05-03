@@ -39,20 +39,60 @@
 }
 
 body {
-  background: #333;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.container__one {
+.container {
   display: flex;
   background-color: #090909;
-
 }
 
-.container__one-item {
+.item {
   width: 100px;
   height: 100px;
-  background: #254ed4; /* css blue */
+  /* css blue */
+  background: #254ed4;
   color: #fff;
   margin: 10px;
 }
+
+.container__justify__end {
+  justify-content: end;
+}
+
+/* 
+.container__justify-end__item {
+  width: 100px;
+  height: 100px;
+  background: #254ed4;
+  color: #fff;
+  margin: 10px;
+} 
+*/
+
+.container__justify__start {
+  justify-content: start;
+}
+
+/* 
+.container__justify-start__item {
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  margin: 10px;
+}
+*/
+
+.container__justify__center {
+  justify-content: center;
+}
+
+.container__justify__space-around {
+  justify-content: space-around;
+}
+
+.container__justify__space-between {
+  justify-content: space-between;
+}
+
+/* .container__align-items__center {} */
