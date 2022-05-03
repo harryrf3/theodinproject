@@ -40,4 +40,19 @@
 
 body {
   background: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container__one {
+  display: flex;
+  background-color: #090909;
+
+}
+
+.container__one-item {
+  width: 100px;
+  height: 100px;
+  background: #254ed4; /* css blue */
+  color: #fff;
+  margin: 10px;
 }
