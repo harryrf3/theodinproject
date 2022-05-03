@@ -41,19 +41,3 @@
 body {
   background: #333;
 }
-
-.container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.container div {
-  border: 1px solid black;
-  background: #ccc;
-  height: 80px;
-}
-
-.item {
-  flex: 1;
-}
