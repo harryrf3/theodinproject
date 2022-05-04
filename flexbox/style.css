@@ -57,7 +57,7 @@ body {
   margin: 10px;
 }
 
-/* JUSTIFY */
+/* JUSTIFY CONTENT */
 
 .container__justify__end {
   justify-content: end;
@@ -127,3 +127,18 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
+
+/* CENTERING ELEMENTS */
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FLEX WRAP */
+
+.container__flex-wrap__wrap {
+  flex-wrap: wrap;
+}
+
