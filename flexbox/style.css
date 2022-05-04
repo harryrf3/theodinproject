@@ -142,3 +142,16 @@ body {
   flex-wrap: wrap;
 }
 
+/* ORDER */
+
+.container__order__item__one {
+  order: 1;
+}
+
+.container__order__item__two {
+  order: 3;
+}
+
+.container__order__item__three {
+  order: 2;
+}
