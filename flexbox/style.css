@@ -111,3 +111,19 @@ body {
 }
 
 /* FLEX DIRECTION */
+
+.container__flex-direction__column {
+  height: 400px;
+  flex-direction: column;
+  /* Always represents Main Axis */
+  justify-content: space-evenly;
+  /* Always represents Cross Axis */
+  align-items: flex-start;
+}
+
+.container__flex-direction__row {
+  height: 400px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
