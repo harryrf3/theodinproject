@@ -42,6 +42,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.heading {
+  background-color: #1a1a1a;
+  color: #ccc;
+}
+
 .container {
   display: flex;
   background-color: #090909;
@@ -154,4 +159,15 @@ body {
 
 .container__order__item__three {
   order: 2;
+}
+
+/* FLEX BASIS */
+
+.item .container__flex-basis__item__one,
+.item .container__flex-basis__item__three {
+  flex-basis: 150px;
+}
+
+.container__flex-basis__item__two {
+  flex-basis: 400px;
 }
