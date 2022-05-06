@@ -50,3 +50,7 @@ ul {
   font-size: x-large;
   font-weight: bold;
 }
+
+.navbar .container {
+  display: flex;
+}
