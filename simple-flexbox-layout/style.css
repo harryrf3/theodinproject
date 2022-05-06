@@ -92,3 +92,6 @@ ul {
   justify-content: space-between;
 }
 
+.boxes .container {
+  display: flex;
+}
