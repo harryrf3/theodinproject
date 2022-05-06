@@ -74,3 +74,9 @@ ul {
   background-color: #0a51cc;
   min-height: 400px;
 }
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
