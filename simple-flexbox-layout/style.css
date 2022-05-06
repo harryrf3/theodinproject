@@ -72,6 +72,7 @@ ul {
 
 .header {
   background-color: #0a51cc;
+  color: #fff;
   min-height: 400px;
 }
 
@@ -85,3 +86,6 @@ ul {
   max-width: 400px;
 }
 
+.header .container {
+  display: flex;
+}
