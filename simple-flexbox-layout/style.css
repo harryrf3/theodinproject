@@ -56,3 +56,7 @@ ul {
   justify-content: space-between;
   align-items: center;
 }
+
+.navbar ul {
+  display: flex;
+}
