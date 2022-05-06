@@ -80,3 +80,8 @@ ul {
   font-weight: bold;
   line-height: 1.2;
 }
+
+.header img {
+  max-width: 400px;
+}
+
