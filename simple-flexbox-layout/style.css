@@ -88,5 +88,6 @@ ul {
 
 .header .container div {
   display: flex;
+  align-items: center;
 }
 
