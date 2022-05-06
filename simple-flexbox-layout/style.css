@@ -86,6 +86,7 @@ ul {
   max-width: 400px;
 }
 
-.header .container {
+.header .container div {
   display: flex;
 }
+
