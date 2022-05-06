@@ -46,6 +46,10 @@ ul {
   font-weight: bold;
 }
 
+.navbar a:hover {
+  color: lightblue;
+}
+
 .logo {
   font-size: x-large;
   font-weight: bold;
