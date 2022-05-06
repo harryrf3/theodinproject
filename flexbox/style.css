@@ -185,6 +185,10 @@ body {
 
 /* FLEX SHRINK */
 
+.shrink {
+  flex-basis: 300px;
+}
+
 .container__flex-shrink__item__one {
   flex-shrink: 1;
 }
