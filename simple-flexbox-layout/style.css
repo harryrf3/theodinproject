@@ -99,4 +99,6 @@ ul {
 
 .box {
   flex: 1;
+  background-color: #0a51cc;
+  color: #fff;
 }
