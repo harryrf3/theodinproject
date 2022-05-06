@@ -171,3 +171,28 @@ body {
 .container__flex-basis__item__two {
   flex-basis: 400px;
 }
+
+/* Flex Grow */
+
+.container__flex-grow__item__one,
+.container__flex-grow__item__three {
+  flex-grow: 1;
+}
+
+.container__flex-grow__item__two {
+  flex-grow: 2;
+}
+
+/* FLEX SHRINK */
+
+.container__flex-shrink__item__one {
+  flex-shrink: 1;
+}
+
+.container__flex-shrink__item__two {
+  flex-shrink: 3;
+}
+
+.container__flex-shrink__item__three {
+  flex-shrink: 2;
+}
