@@ -94,4 +94,9 @@ ul {
 
 .boxes .container {
   display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  flex: 1;
 }
