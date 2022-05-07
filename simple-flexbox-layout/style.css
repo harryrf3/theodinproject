@@ -112,7 +112,7 @@ ul {
 }
 
 @media(max-width: 768px) {
-  .header .container {
+  .header .container div {
     flex-direction: column;
     padding-top: 20px;
     text-align: center;
