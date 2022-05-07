@@ -117,4 +117,8 @@ ul {
     padding-top: 20px;
     text-align: center;
   }
+
+  .boxes .container {
+    display: block;
+  }
 }
