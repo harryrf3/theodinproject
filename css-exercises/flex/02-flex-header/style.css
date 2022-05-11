@@ -6,6 +6,7 @@ body {
 .header  {
   font-family: monospace;
   background: #191919;
+  display: flex;
 }
 
 .logo {
