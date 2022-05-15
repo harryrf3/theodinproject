@@ -17,10 +17,19 @@ img {
   margin-bottom: 32px;
 }
 
-.flex__card {
+.flex__container {
   display: flex;
   justify-content: center;
-  /* gap: 52px; */
+}
+
+.flex__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex__item__text {
+  text-align: center;
 }
 
 
@@ -29,9 +38,9 @@ img {
 
 // All items are centered on the page (horizontally, not vertically).
 
-? The title is centered on the page.
+// The title is centered on the page.
 
-? There is 32px between the title and the 'items.'
+// There is 32px between the title and the 'items.'
 
 ? There is 52px between each item. 
 ? The items are arranged horizontally on the page. 
@@ -39,16 +48,6 @@ img {
 ? The item text is centered.
 */
 
-
-.flex__container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.text__container {
-  text-align: center;
-}
 
 
 /* dev */
