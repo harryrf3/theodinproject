@@ -15,9 +15,27 @@ body {
   justify-content: center;
 }
 
+/* 
+
+  * Flow that feels comfortable:
+
+  ? Alignment
+    * main axis
+    * cross axis
+    *
+
+  ? Structural
+    * margin
+    * padding
+    * 
+  
+ */
+
 .modal {
   background: white;
   width: 480px;
+  display: flex;
+  flex-direction: column;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
 }
