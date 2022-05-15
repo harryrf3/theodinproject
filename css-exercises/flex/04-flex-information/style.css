@@ -20,16 +20,19 @@ img {
 .flex__container {
   display: flex;
   justify-content: center;
+  gap: 52px;
 }
 
 .flex__item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 200px;
 }
 
 .flex__item__text {
   text-align: center;
+  max-width: 200px;
 }
 
 
@@ -38,24 +41,27 @@ img {
 
 // All items are centered on the page (horizontally, not vertically).
 
-// The title is centered on the page.
+// ? The title is centered on the page.
 
-// There is 32px between the title and the 'items.'
+// ? There is 32px between the title and the 'items.'
 
-? There is 52px between each item. 
-? The items are arranged horizontally on the page. 
-? The items are only 200px wide and the text wraps. 
-? The item text is centered.
+// ? There is 52px between each item. 
+
+// ? The items are arranged horizontally on the page. 
+
+// ? The items are only 200px wide and the text wraps. 
+
+// ? The item text is centered.
 */
 
 
 
 /* dev */
-.ref__img {
+/* .ref__img {
   height: 100%;
   width: 100%;
   border: 1px solid red;
-}
+} */
 
 /* do not edit this footer */
 .footer {
