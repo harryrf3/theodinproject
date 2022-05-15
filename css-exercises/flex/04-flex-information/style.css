@@ -1,7 +1,7 @@
 body {
   font-family: 'Courier New', Courier, monospace;
-  background-color: #090909;
-  color: #ccc;
+  /* background-color: #090909; */
+  /* color: #ccc; */
 }
 
 img {
@@ -20,12 +20,13 @@ img {
 .flex__card {
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin: 30px;
+  gap: 30px
 }
 
 .flex__container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
 }
@@ -39,6 +40,7 @@ img {
 .ref__img {
   height: 100%;
   width: 100%;
+  border: 1px solid red;
 }
 
 /* do not edit this footer */
