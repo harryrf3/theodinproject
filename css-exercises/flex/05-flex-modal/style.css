@@ -22,7 +22,7 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
 }
 
-.icon {
+.modal__icon {
   color: royalblue;
   font-size: 26px;
   font-weight: 700;
@@ -35,7 +35,7 @@ body {
   justify-content: center;
 }
 
-.close-button {
+.modal__close-button {
   background: #eee;
   border-radius: 50%;
   color: #888;
