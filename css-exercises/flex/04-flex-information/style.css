@@ -20,8 +20,24 @@ img {
 .container {
   display: flex;
   justify-content: center;
-  align-items: center;;
+  align-items: center;
+  flex-direction: column;
 }
+
+.img {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.text {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+/* .img and .text idea not working out, move on. */
+
 
 .ref__img {
   height: 100%;
