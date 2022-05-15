@@ -1,7 +1,5 @@
 body {
   font-family: 'Courier New', Courier, monospace;
-  /* background-color: #090909; */
-  /* color: #ccc; */
 }
 
 img {
@@ -35,31 +33,6 @@ img {
   max-width: 200px;
 }
 
-
-/*
-? Self Check:
-
-// All items are centered on the page (horizontally, not vertically).
-
-// ? The title is centered on the page.
-
-// ? There is 32px between the title and the 'items.'
-
-// ? There is 52px between each item. 
-
-// ? The items are arranged horizontally on the page. 
-
-// ? The items are only 200px wide and the text wraps. 
-
-// ? The item text is centered.
-*/
-
-/* dev */
-/* .ref__img {
-  height: 100%;
-  width: 100%;
-  border: 1px solid red;
-} */
 
 /* do not edit this footer */
 .footer {
