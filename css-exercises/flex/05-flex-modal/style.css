@@ -43,7 +43,7 @@ body {
 
 .modal__info {
   display: flex;
-  
+  justify-content: space-between;
 }
 
 .modal__info--icon {
