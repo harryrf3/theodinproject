@@ -71,13 +71,13 @@ button {
   border-radius: 8px;
 }
 
-button.continue {
+button.modal__continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
 }
 
-button.cancel {
+button.modal__cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
