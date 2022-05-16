@@ -17,26 +17,26 @@
 
       * Alignment:
 
-        * icon is in its own column container with the flex-direction at flex-start
+        * modal__icon is in its own column container with the flex-direction at flex-start
 
-        * header, close-button, text, continue, and cancel are all in one container
-          * header and close-button are in a row container with justify-items set to space-between 
+        * modal__header, modal__close--button, modal__text, modal__button--continue, and modal__buton--cancel are all in one container
+          * modal__header and modal__close--button are in a row container with justify-items set to space-between 
             * (possibly) align-items and justify-content set to center
 
-        * continue and cancel are in a row container
+        * modal__button--continue and modal__buton--cancel are in a row container
           * items are set to align-items: left or flex-start
     
     -->
 
   <div class="modal">
-    <div class="icon">!</div>
-    <div class="header">Are you sure you want to do that?</div>
-    <div class="close-button">✖</div>
-    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur excepturi id soluta, numquam
+    <div class="modal__icon">!</div>
+    <div class="modal__header">Are you sure you want to do that?</div>
+    <div class="modal__close--button">✖</div>
+    <div class="modal__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur excepturi id soluta, numquam
       minima rerum doloremque eveniet aspernatur beatae commodi. Cupiditate recusandae ad repellendus quidem consectetur
       sequi amet aspernatur cumque!</div>
-    <button class="continue">Continue</button>
-    <button class="cancel">Cancel</button>
+    <button class="modal__button--continue">Continue</button>
+    <button class="modal__buton--cancel">Cancel</button>
   </div>
 </body>
 
