@@ -53,7 +53,7 @@ body {
   justify-content: center;
 }
 
-.modal__close-button {
+.modal__button--close {
   background: #eee;
   border-radius: 50%;
   color: #888;
@@ -71,13 +71,13 @@ button {
   border-radius: 8px;
 }
 
-button.modal__button-continue {
+button.modal__button--continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
 }
 
-button.modal__button-cancel {
+button.modal__button--cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
