@@ -12,19 +12,24 @@
 <body>
   <!--
 
-    * Layout Inspection:
+* Layout Inspection:
 
-      * Alignment:
 
-        * modal__icon is in its own column container with the flex-direction at flex-start
+* - Alignment:
 
-        * modal__header, modal__close--button, modal__text, modal__button--continue, and modal__buton--cancel are all in one container
-          * modal__header and modal__close--button are in a row container with justify-items set to space-between 
-            * (possibly) align-items and justify-content set to center
 
-        * modal__button--continue and modal__buton--cancel are in a row container
-          * items are set to align-items: left or flex-start
+* -- modal_icon is in its own column container with the flex-direction at flex-start
+
+
+* -- modal__header, modal__close--button, modal__text, modal__button--continue, and modal__buton--cancel are all in one container
+* --- modal__header and modal__close--button are in a row container with justify-items set to space-between 
+* ---- (possibly) align-items and justify-content set to center
+
+
+* -- modal__button--continue and modal__buton--cancel are in a row container
+* --- items are set to align-items: left or flex-start
     
+
     -->
 
   <div class="modal">
@@ -33,13 +38,16 @@
     <aside class="modal__attention">
       <h4 class="modal__attention--icon">!</h4>
     </aside>
-    
+
 
     <div class="modal__header">Are you sure you want to do that?</div>
     <div class="modal__close--button">✖</div>
     <button class="modal__button--continue">Continue</button>
     <button class="modal__button--cancel">Cancel</button>
+
+    
   </div>
+
 
 </body>
 
