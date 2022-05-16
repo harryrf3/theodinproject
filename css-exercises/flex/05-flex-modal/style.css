@@ -15,24 +15,56 @@ body {
   justify-content: center;
 }
 
+
+/* * Modal Container */
+
 .modal {
   display: flex;
+  /* flex-direction: column; */
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0, 0, 0, .2);
 }
 
+
+/* * Aside Container */
+
 .modal__aside {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  order: 1;
 }
+
+
+/* * Info Container */
 
 .modal__info {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  order: 2;
+}
+
+.modal__info__header {
+  display: flex;
+  align-items: center;
+}
+
+.modal__info__header--text,
+.modal__info__header--button--close {
+  justify-content: space-between;
+}
+
+
+/* * Content Container */
+
+.modal__content {
+  display: flex;
+  flex-direction: column;
+  order: 3;
 }
 
 .modal__interactive {
@@ -40,6 +72,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+  order: 4;
 }
 
 
