@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -37,10 +38,15 @@ body {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, .2);
 }
 
-.modal__icon {
+.modal__info {
+  display: flex;
+  
+}
+
+.modal__info--icon {
   color: royalblue;
   font-size: 26px;
   font-weight: 700;
