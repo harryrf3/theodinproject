@@ -38,11 +38,10 @@ body {
 
 .modal__aside {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  flex-direction: column;
   gap: 8px;
-  /* order: 1; */
 }
 
 
@@ -60,11 +59,13 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* order: 2; */
 }
 
 .modal__main__info__header {
   display: flex;
+}
+
+.modal__main__info__header--text {
   justify-content: space-between;
 }
 
@@ -73,8 +74,6 @@ body {
 
 .modal__main__content {
   display: flex;
-  flex-direction: column;
-  /* order: 3; */
 }
 
 .modal__main__interactive {
@@ -82,7 +81,6 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  /* order: 4; */
 }
 
 
