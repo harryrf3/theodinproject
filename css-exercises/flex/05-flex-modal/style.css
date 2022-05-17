@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html,
 body {
   height: 100%;
@@ -25,6 +31,7 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0, 0, 0, .2);
+  gap: 20px;
 }
 
 
@@ -35,44 +42,52 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  order: 1;
+  /* order: 1; */
+}
+
+
+/* * Main Section Container */
+
+.modal__main {
+  display: flex;
+  flex-direction: column;
 }
 
 
 /* * Info Container */
 
-.modal__info {
+.modal__main__info {
   display: flex;
   flex-direction: row;
   align-items: center;
-  order: 2;
+  /* order: 2; */
 }
 
-.modal__info__header {
+.modal__main__info__header {
   display: flex;
   align-items: center;
 }
 
-.modal__info__header--text,
-.modal__info__header--button--close {
+.modal__main__info__header--text,
+.modal__main__info__header--button--close {
   justify-content: space-between;
 }
 
 
 /* * Content Container */
 
-.modal__content {
+.modal__main__content {
   display: flex;
   flex-direction: column;
-  order: 3;
+  /* order: 3; */
 }
 
-.modal__interactive {
+.modal__main__interactive {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  order: 4;
+  /* order: 4; */
 }
 
 
