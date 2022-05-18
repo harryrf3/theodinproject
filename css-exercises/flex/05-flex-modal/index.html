@@ -1,74 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Modal</title>
-</head>
-
-<body>
-  <!--
-
-* Layout Inspection:
-
-
-* - Alignment:
-
-
-* -- modal_icon is in its own column container with the align-items set to flex-start
-
-
-* -- modal__header, modal__close--button, modal__text, modal__button--continue, and modal__buton--cancel are all in one container
-* --- modal__header and modal__close--button are in a row container with justify-items set to space-between 
-* ---- (possibly) align-items and justify-content set to center
-
-
-* -- modal__button--continue and modal__buton--cancel are in a row container
-* --- items are set to align-items: left or flex-start
-    
-
-    -->
-
-  <section class="modal">
-
-    <section class="modal__aside">
-      <aside class="modal__aside__attention">
-        <h4 class="modal__aside__attention--icon">!</h4>
-      </aside>
-    </section>
-
-
-    <section class="modal__main">
-
-      <section class="modal__main__info">
-        <header class="modal__main__info__header">
-          <h3 class="modal__main__info__header--text">Are you sure you want to do that?</h3>
-          <div class="modal__main__info__button--close">✖</div>
-        </header>
-      </section>
-
-
-      <section class="modal__main__content">
-        <p class="modal__main__content--text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur excepturi id soluta, numquam
-          minima rerum doloremque eveniet aspernatur beatae commodi. Cupiditate recusandae ad repellendus quidem
-          consectetur
-          sequi amet aspernatur cumque!
-        </p>
-      </section>
-
-
-      <section class="modal__main__interactive" type="button">
-        <button class="modal__main__interactive__button--continue">Continue</button>
-        <button class="modal__main__interactive__button--cancel">Cancel</button>
-      </section>
-    </section>
-
-  </section> <!-- .modal -->
-
-</body>
-
-</html>
+ 
+ <!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Modal</title>
+ </head>
+ 
+ <body>
+   <section class="modal">
+ 
+     <div class="flex-container">
+ 
+       <section class="modal__aside">
+         <div class="modal__aside__icon">
+           <h4 class="modal__aside__icon--text">!</h4>
+         </div>
+       </section>
+ 
+ 
+       <section class="modal__main">
+ 
+         <header class="modal__main__header">
+           <h3 class="modal__main__header--text">Are you sure you want to do that?</h3>
+           <div class="modal__main__button--close">✖</div>
+         </header>
+ 
+ 
+         <article class="modal__main__paragraph">
+           <p class="modal__main__paragraph--text">
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur excepturi id soluta, numquam
+             minima rerum doloremque eveniet aspernatur beatae commodi. Cupiditate recusandae ad repellendus quidem
+             consectetur
+             sequi amet aspernatur cumque!
+           </p>
+         </article>
+ 
+ 
+         <section class="modal__main__button" type="button">
+           <button class="modal__main__button--continue">Continue</button>
+           <button class="modal__main__button--cancel">Cancel</button>
+         </section>
+ 
+       </section> <!-- .modal__main -->
+ 
+     </div>
+ 
+   </section> <!-- .modal -->
+ 
+ </body>
+ 
+ </html>
