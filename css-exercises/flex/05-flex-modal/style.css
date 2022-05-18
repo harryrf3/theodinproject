@@ -2,8 +2,8 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 2px;
+  padding: 2px;
 }
 
 html,
@@ -27,7 +27,7 @@ body {
 .modal {
   display: flex;
   background: white;
-  width: 480px;
+  width: 600px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0, 0, 0, .2);
   gap: 40px;
@@ -37,44 +37,125 @@ body {
 /* * Aside Container */
 
 .modal__aside {
+  border: 4px solid blue;
+  border-radius: 10px;
+}
+
+.modal__aside--icon {
+  border: 4px solid green;
+  border-radius: 10px;
+}
+
+h4.modal__aside--icon {
+  font-weight: bold;
+  color: purple;
+}
+
+
+
+
+/* 
+.modal__aside {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   gap: 8px;
-  /* order: 1; */
 }
-
+*/
 
 /* * Main Section Container */
 
-.modal__main {
-  display: flex;
-  flex-direction: column;
+/* 
+  First Child: red;
+  Second Child: green;
+  Third Child: blue;
+  Fourth Child: purple;
+  Fifth Child: orange;
+ */
+
+.modal {
+  border: 4px solid red;
+  border-radius: 10px;
 }
 
 
-/* * Info Container */
 
-.modal__main__info {
+.modal__main {
+  border: 4px solid blue;
+  border-radius: 10px;
+}
+
+.modal__main__header {
+  border: 4px solid green;
+  border-radius: 10px;
+}
+
+.modal__main__header--text {
+  border: 4px solid purple;
+  border-radius: 10px;
+}
+
+h3.modal__main__header--text {
+  color: orange;
+}
+
+.modal__main__button--close {
+  border: 4px solid purple;
+  border-radius: 10px;
+}
+
+div.modal__main__button--close {
+  color: orange;
+}
+
+.modal__main__paragraph {
+  border: 4px solid green;
+  border-radius: 10px;
+}
+
+.modal__main__paragraph--text {
+  border: 4px solid purple;
+  border-radius: 10px;
+}
+
+.modal__main__button {
+  border: 4px solid green;
+  border-radius: 10px;
+}
+
+.modal__main__button--continue {
+  border: 4px solid purple;
+  border-radius: 10px;
+}
+
+.modal__main__button--cancel {
+  border: 4px solid purple;
+  border-radius: 10px;
+}
+
+/* .modal__main {
+  display: flex;
+  flex-direction: column;
+} */
+
+/* .modal__main__info {
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* order: 2; */
 }
 
 .modal__main__info__header {
   display: flex;
   justify-content: space-between;
-}
+} */
 
 
 /* * Content Container */
 
-.modal__main__content {
+/* .modal__main__content {
   display: flex;
   flex-direction: column;
-  /* order: 3; */
 }
 
 .modal__main__interactive {
@@ -82,10 +163,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  /* order: 4; */
-}
-
-
+} */
 
 
 /* 
