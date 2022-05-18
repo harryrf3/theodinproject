@@ -31,6 +31,8 @@ body {
 }
 
 
+
+
 /* * Modal Container */
 
 .modal {
@@ -43,11 +45,16 @@ body {
   gap: 40px;
 }
 
+
 /* * Flex Container */
 
 .flex-container {
   display: flex;
+  border: 4px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, .2);
 }
+
 
 /* * Aside Container */
 
@@ -55,7 +62,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-self: ;
   border: 4px solid blue;
   border-radius: 10px;
 }
