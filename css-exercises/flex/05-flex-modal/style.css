@@ -22,9 +22,9 @@ body {
   display: flex;
   background: white;
   width: 480px;
+  padding: 10px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0, 0, 0, .2);
-  gap: 40px;
 }
 
 
@@ -41,6 +41,8 @@ body {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  margin: 10px;
+  padding: 4px;
 }
 
 .modal__aside__icon {
@@ -83,7 +85,7 @@ body {
 .modal__main__button {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  gap: 8px;
 }
 
 .modal__main__button--close {
