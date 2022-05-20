@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 html,
 body {
   height: 100%;
@@ -52,10 +46,14 @@ body {
 .modal__aside__icon {
   color: royalblue;
   font-size: 26px;
+  font-weight: 700;
+  background-color: lavender;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 50px;
 }
 
 /* * Main Section Container */
@@ -74,11 +72,11 @@ body {
 
 /* * Main Paragraph */
 
-/* .modal__main__paragraph {
+.modal__main__paragraph {
   display: flex;
   align-items: center;
-  justify-content: center; 
-} */
+  justify-content: center;
+}
 
 /* * Main Button */
 
@@ -88,3 +86,32 @@ body {
   justify-content: flex-start;
 }
 
+.modal__main__button--close {
+  background: #eee;
+  border-radius: 50%;
+  color: #888;
+  font-weight: 400;
+  font-size: 16px;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.modal__main__button--continue {
+  background: royalblue;
+  border: 1px solid royalblue;
+  color: white;
+}
+
+.modal__main__button--cancel {
+  background: white;
+  border: 1px solid #ddd;
+  color: royalblue;
+}
