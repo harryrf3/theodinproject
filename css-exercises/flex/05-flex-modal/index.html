@@ -1,20 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Modal</title>
-  </head>
-  <body>
-    <div class="modal">
-      <div class="icon">!</div>
-      <div class="header">Are you sure you want to do that?</div>
-      <div class="close-button">✖</div>
-      <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur excepturi id soluta, numquam minima rerum doloremque eveniet aspernatur beatae commodi. Cupiditate recusandae ad repellendus quidem consectetur sequi amet aspernatur cumque!</div>
-      <button class="continue">Continue</button>
-      <button class="cancel">Cancel</button>
-    </div>
-  </body>
-</html>
+ 
+ <!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Modal</title>
+ </head>
+ 
+ <body>
+   <section class="modal">
+ 
+     <div class="flex-container">
+ 
+       <section class="modal__aside">
+         <div class="modal__aside__icon">
+           <h4 class="modal__aside__icon--text">!</h4>
+         </div>
+       </section>
+ 
+ 
+       <section class="modal__main">
+ 
+         <header class="modal__main__header">
+           <h3 class="modal__main__header--text">Are you sure you want to do that?</h3>
+           <div class="modal__main__button--close">✖</div>
+         </header>
+ 
+ 
+         <article class="modal__main__paragraph">
+           <p class="modal__main__paragraph--text">
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur excepturi id soluta, numquam
+             minima rerum doloremque eveniet aspernatur beatae commodi. Cupiditate recusandae ad repellendus quidem
+             consectetur
+             sequi amet aspernatur cumque!
+           </p>
+         </article>
+ 
+ 
+         <section class="modal__main__button" type="button">
+           <button class="modal__main__button--continue">Continue</button>
+           <button class="modal__main__button--cancel">Cancel</button>
+         </section>
+ 
+       </section> <!-- .modal__main -->
+ 
+     </div>
+ 
+   </section> <!-- .modal -->
+ 
+ </body>
+ 
+ </html>
