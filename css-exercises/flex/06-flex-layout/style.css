@@ -20,6 +20,10 @@ button {
   background: #eee;
 }
 
+li {
+  list-style: none;
+}
+
 input {
   border: 1px solid #ddd;
   border-radius: 16px;
