@@ -6,6 +6,7 @@ body {
   overflow: hidden;
   font-family: Roboto, sans-serif;
   display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -28,52 +29,68 @@ input {
 }
 
 .header {
-border: 4px solid red;
-border-radius: 10px;
+  display: flex;
+  border: 4px solid red;
+  border-radius: 10px;
 }
 
 .header__links--left {
+  display: flex;
+  /* dev colors  */
   border: 4px solid green;
   border-radius: 10px;
 }
 
 .header__links--right {
+  display: flex;
+  /* dev colors  */
   border: 4px solid green;
   border-radius: 10px;
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  /* dev colors  */
   border: 4px solid red;
   border-radius: 10px;
 }
 
 .content img {
+  /* dev colors  */
   border: 4px solid green;
   border-radius: 10px;
 }
 
 
 .content__input {
+  /* dev colors  */
   border: 4px solid green;
   border-radius: 10px;
 }
 
 .content__buttons {
+  /* dev colors  */
   border: 4px solid green;
   border-radius: 10px;
 }
 
 .footer {
+  display: flex;
+  justify-content: space-between;
+  /* dev colors  */
   border: 4px solid red;
   border-radius: 10px;
 }
 
 .footer__links--left {
+  /* dev colors  */
   border: 4px solid green;
   border-radius: 10px;
 }
 
 .footer__links--right {
+  /* dev colors  */
   border: 4px solid green;
   border-radius: 10px;
 }
