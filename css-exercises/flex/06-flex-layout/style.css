@@ -1,10 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -18,10 +29,89 @@ button {
   background: #eee;
 }
 
+li {
+  list-style: none;
+}
+
 input {
   border: 1px solid #ddd;
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 4px solid red;
+  border-radius: 10px;
+}
+
+.header__links--left,
+.header__links--right,
+.footer__links--left,
+.footer__links--right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  /* dev colors  */
+  border: 4px solid green;
+  border-radius: 10px;
+}
+
+.header__links--right {
+  display: flex;
+  /* dev colors  */
+  border: 4px solid green;
+  border-radius: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* dev colors  */
+  border: 4px solid red;
+  border-radius: 10px;
+}
+
+.content img {
+  /* dev colors  */
+  border: 4px solid green;
+  border-radius: 10px;
+}
+
+
+.content__input {
+  /* dev colors  */
+  border: 4px solid green;
+  border-radius: 10px;
+}
+
+.content__buttons {
+  /* dev colors  */
+  border: 4px solid green;
+  border-radius: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  /* dev colors  */
+  border: 4px solid red;
+  border-radius: 10px;
+}
+
+.footer__links--left {
+  /* dev colors  */
+  border: 4px solid green;
+  border-radius: 10px;
+}
+
+.footer__links--right {
+  /* dev colors  */
+  border: 4px solid green;
+  border-radius: 10px;
 }
