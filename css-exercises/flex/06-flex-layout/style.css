@@ -77,10 +77,6 @@ input {
   gap: 16px;
 }
 
-.header__links--right {
-  display: flex;
-}
-
 .content {
   display: flex;
   flex-direction: column;
