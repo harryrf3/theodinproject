@@ -1,9 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html,
 body {
   height: 100%;
 }
+
+/* 
+  First Child: red;
+  Second Child: green;
+  Third Child: blue;
+  Fourth Child: purple;
+  Fifth Child: orange;
+  Sixth Child: pink;
+ */
 
 body {
   font-family: Roboto, sans-serif;
@@ -15,10 +29,136 @@ body {
   justify-content: center;
 }
 
+
+
+
+/* * Modal Container */
+
 .modal {
+  display: flex;
   background: white;
   width: 480px;
+  padding: 15px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0, 0, 0, .2);
 }
 
+
+/* * Flex Container */
+
+.flex-container {
+  display: flex;
+}
+
+
+/* * Flex Container */
+
+.flex-container {
+  display: flex;
+  border: 4px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, .2);
+}
+
+
+/* * Aside Container */
+
+.modal__aside {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-right: 15px;
+}
+
+.modal__aside__icon {
+  color: royalblue;
+  font-size: 26px;
+  font-weight: 700;
+  background-color: lavender;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* * Main Section Container */
+
+.modal__main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal__main__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* * Main Paragraph */
+
+.modal__main__paragraph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* * Main Button */
+
+.modal__main__button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.modal__main__button--close {
+  background: #eee;
+  border-radius: 50%;
+  color: #888;
+  font-weight: 400;
+  font-size: 16px;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.modal__main__button--continue {
+  background: royalblue;
+  border: 1px solid royalblue;
+  color: white;
+}
+
+.modal__main__button--cancel {
+  background: white;
+  border: 1px solid #ddd;
+  color: royalblue;
+}
+
+
+/* 
+
+? Self Check:
+
+// ? The blue icon is aligned to the left.
+
+// ? There is equal space on either side of the icon (the gaps between the icon and the edge of the card, and the icon and the text, are the same).
+
+// ? There is padding around the edge of the modal.
+
+// ? The header, text, and buttons are aligned with each other.
+
+// ? The header is bold and a slightly larger text-size than the text.
+
+// ? The close button is vertically aligned with the header, and aligned in the top-right of the card.
+
+ */
