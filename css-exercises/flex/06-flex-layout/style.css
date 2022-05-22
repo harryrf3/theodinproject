@@ -77,6 +77,13 @@ input {
   gap: 16px;
 }
 
+.header__links--left a,
+.header__links--right a,
+.footer__links--left a,
+.footer__links--right a {
+  color: #666;
+}
+
 .content {
   display: flex;
   flex-direction: column;
