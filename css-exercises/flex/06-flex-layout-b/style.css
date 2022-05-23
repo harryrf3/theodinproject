@@ -7,6 +7,8 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 li {
@@ -19,4 +21,25 @@ a {
 
 button {
   border: none;
+}
+
+.hero {
+  display: flex;
+}
+
+.hero__header {
+  display: flex;
+}
+
+.hero__header__links {
+  display: flex;
+}
+
+
+.hero__text {
+  display: flex;
+}
+
+.hero__img__container {
+  display: flex;
 }
