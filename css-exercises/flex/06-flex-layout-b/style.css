@@ -25,6 +25,7 @@ button {
 
 .hero {
   display: flex;
+  flex-direction: column;
 }
 
 .hero__header {
