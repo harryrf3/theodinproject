@@ -59,4 +59,12 @@ button {
   flex-direction: column;
 }
 
+.info__header__container {
+  display: flex;
+  justify-content: center;
+}
+
+.info__img__container {
+  display: flex;
+}
 
