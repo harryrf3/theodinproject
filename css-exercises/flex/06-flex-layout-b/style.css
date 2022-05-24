@@ -96,3 +96,33 @@ button {
   border-radius: 14px;
   margin: 1px;
 }
+
+
+/* * Quote Section */
+
+.quote__container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* * Call to Action Container */
+
+.cta__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta__container__child {
+  display: flex;
+}
+
+
+/* * Footer */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
