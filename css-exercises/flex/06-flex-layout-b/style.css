@@ -25,6 +25,20 @@ button {
 }
 
 
+/* * Header Section */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: #1F2937;
+}
+
+.header__links--text {
+  display: flex;
+  gap: 26px;
+}
+
+
 /* * Hero Section */
 
 .hero {
@@ -33,14 +47,10 @@ button {
   background: #1F2937;
 }
 
-.hero__header {
+.hero {
   display: flex;
-  justify-content: space-between;
-}
-
-.hero__header__links {
-  display: flex;
-  gap: 26px;
+  flex-direction: column;
+  background: #1F2937;
 }
 
 .hero__text {
