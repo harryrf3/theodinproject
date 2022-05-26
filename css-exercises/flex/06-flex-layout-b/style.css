@@ -84,6 +84,9 @@ main {
   overflow: hidden;
 }
 
+.hero__text__container--button {
+  background-color: #3882f6;
+}
 
 /* * Info Section */
 
