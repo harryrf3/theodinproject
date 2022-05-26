@@ -100,6 +100,12 @@ main {
   justify-content: center;
 }
 
+.info__header__container--heading {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
+}
+
 .info__cards__container {
   display: flex;
 }
