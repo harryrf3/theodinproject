@@ -119,11 +119,20 @@ main {
 
 /* * Quote Section */
 
+.quote {
+  background: #e5e7eb;
+}
+
 .quote__container {
   display: flex;
   flex-direction: column;
 }
 
+.quote__container--text {
+  font-size: 36px;
+  font-weight: 300;
+  color: #1f2937;
+}
 
 /* * Call to Action Container */
 
