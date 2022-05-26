@@ -24,6 +24,13 @@ button {
   border: none;
 }
 
+/* * Main Section */
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 
 /* * Header Section */
 
@@ -33,9 +40,18 @@ button {
   background: #1F2937;
 }
 
+.header__logo {
+  font-size: 24px;
+  color: #f9faf8;
+}
+
 .header__links--text {
   display: flex;
   gap: 26px;
+}
+
+.header__links a {
+  color: #e5e7eb;
 }
 
 
@@ -44,17 +60,13 @@ button {
 .hero {
   display: flex;
   flex-direction: column;
-  background: #1F2937;
-}
-
-.hero {
-  display: flex;
-  flex-direction: column;
+  /* align-content: center; */
   background: #1F2937;
 }
 
 .hero__text {
   display: flex;
+
 }
 
 .hero__img__container {
