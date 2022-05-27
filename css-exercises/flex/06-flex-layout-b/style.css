@@ -27,6 +27,7 @@ a {
 
 .header {
   display: flex;
+  align-items: center;
   justify-content: space-around;
   background: var(--background-color-dark);
   padding: 20px 0;
@@ -45,6 +46,8 @@ a {
 }
 
 .header__nav a {
+  display: flex;
+  justify-content: center;
   font-size: 18px;
   color: #ebe7eb;
 }
