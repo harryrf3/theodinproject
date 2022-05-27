@@ -1,3 +1,13 @@
+:root {
+  --background-color-dark: #1f2937;
+  --hero-main-text: #f9faf8;
+  --hero-secondary-text: #e5e7eb;
+  --header-logo-text: var(--hero-main-text);
+  --background-color-action: #3882f6;
+  --information-header-text: #1f2937;
+  --background-color-gray: var(--hero-secondary-text);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,7 +28,7 @@ a {
 .header {
   display: flex;
   justify-content: space-around;
-  background: #1f2937;
+  background: var(--background-color-dark);
   padding: 20px 0;
 }
 
