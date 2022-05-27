@@ -4,7 +4,36 @@
   padding: 0;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* * Header */
+
 .header {
   display: flex;
   justify-content: space-around;
+  background: #1f2937;
+  padding: 20px 0;
+}
+
+.header__logo {
+  font-size: 24px;
+  font-weight: 800;
+  color: #f9faf8;
+}
+
+.header__nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+.header__nav li {
+  font-size: 18px;
+  color: #ebe7eb;
 }
