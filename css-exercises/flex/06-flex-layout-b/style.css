@@ -30,10 +30,11 @@ a {
 
 .header__nav ul {
   display: flex;
+  justify-content: center;
   gap: 30px;
 }
 
-.header__nav li {
+.header__nav a {
   font-size: 18px;
   color: #ebe7eb;
 }
