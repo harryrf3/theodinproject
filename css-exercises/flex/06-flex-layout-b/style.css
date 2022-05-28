@@ -73,6 +73,8 @@ a {
 }
 
 .hero__text {
+  display: flex;
+  flex-direction: column;
   /* ! dev borders  */
   border: var(--border-second-child);
   border-radius: var(--border-child-radius);
@@ -113,3 +115,5 @@ a {
   border-radius: var(--border-child-radius);
   margin: var(--border-child-margin);
 }
+
+/* TODO: - See last commit for previous changes made - Continue work on .hero */
