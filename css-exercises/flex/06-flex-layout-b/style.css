@@ -6,6 +6,16 @@
   --background-color-action: #3882f6;
   --information-header-text: #1f2937;
   --background-color-gray: var(--hero-secondary-text);
+  /* ! Dev Border Colors [start] */
+  --universal-child-border: 4px solid;
+  --universal-child-gap: 4px;
+  --first-child-color: red;
+  --second-child-color: green;
+  --third-child-color: blue;
+  --fourth-child-color: purple;
+  --fifth-child-color: orange;
+  --sixth-child-color: pink;
+  /* ! Dev Border Colors [end] */
 }
 
 * {
@@ -50,4 +60,11 @@ a {
   justify-content: center;
   font-size: 18px;
   color: #ebe7eb;
+}
+
+
+/* * Hero */
+
+.hero {
+  display: flex;
 }
