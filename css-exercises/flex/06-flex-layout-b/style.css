@@ -73,14 +73,14 @@ a {
 }
 
 .hero__text {
-  /* dev borders  */
+  /* ! dev borders  */
   border: var(--border-second-child);
   border-radius: var(--border-child-radius);
   margin: var(--border-child-margin);
 }
 
 .hero__text h1 {
-  /* dev borders  */
+  /* ! dev borders  */
   border: var(--border-third-child);
   border-radius: var(--border-child-radius);
   margin: var(--border-child-margin);
