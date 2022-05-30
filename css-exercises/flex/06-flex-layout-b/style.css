@@ -91,6 +91,7 @@ a {
 }
 
 .hero__text sub {
+  max-width: 50ch;
   /* ! dev borders */
   border: var(--border-third-child);
   border-radius: var(--border-child-radius);
