@@ -112,6 +112,7 @@ a {
 }
 
 .hero__img img {
+  width: 100%;
   /* ! dev borders */
   border: var(--border-third-child);
   border-radius: var(--border-child-radius);
