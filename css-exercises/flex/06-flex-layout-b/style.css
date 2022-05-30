@@ -75,6 +75,7 @@ a {
 
 .hero__text {
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
   /* ! dev borders  */
   border: var(--border-second-child);
