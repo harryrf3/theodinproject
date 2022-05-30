@@ -67,6 +67,7 @@ a {
 
 .hero {
   display: flex;
+  align-items: center;
   /* ! dev borders  */
   border: var(--border-first-child);
   border-radius: var(--border-child-radius);
