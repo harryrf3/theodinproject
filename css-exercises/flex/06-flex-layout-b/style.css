@@ -68,7 +68,8 @@ a {
 .hero {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  background: var(--background-color-dark);
   /* ! dev borders  */
   border: var(--border-first-child);
   border-radius: var(--border-child-radius);
