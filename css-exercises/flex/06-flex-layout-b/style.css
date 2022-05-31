@@ -70,56 +70,30 @@ a {
   align-items: center;
   justify-content: space-evenly;
   background: var(--background-color-dark);
-  /* ! dev borders  */
-  border: var(--border-first-child);
-  border-radius: var(--border-child-radius);
 }
 
 .hero__text {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  /* ! dev borders  */
-  border: var(--border-second-child);
-  border-radius: var(--border-child-radius);
-  margin: var(--border-child-margin);
 }
 
-.hero__text h1 {
-  /* ! dev borders  */
-  border: var(--border-third-child);
-  border-radius: var(--border-child-radius);
-  margin: var(--border-child-margin);
-}
+/* .hero__text h1 {
+} */
 
 .hero__text sub {
   max-width: 50ch;
-  /* ! dev borders */
-  border: var(--border-third-child);
-  border-radius: var(--border-child-radius);
-  margin: var(--border-child-margin);
 }
 
-.hero__button {
-  /* ! dev borders */
-  border: var(--border-third-child);
-  border-radius: var(--border-child-radius);
-  margin: var(--border-child-margin);
-}
+/* .hero__button {
 
-.hero__img {
-  /* ! dev borders */
-  border: var(--border-second-child);
-  border-radius: var(--border-child-radius);
-  margin: var(--border-child-margin);
-}
+} */
+
+/* .hero__img {
+} */
 
 .hero__img img {
   width: 100%;
-  /* ! dev borders */
-  border: var(--border-third-child);
-  border-radius: var(--border-child-radius);
-  margin: var(--border-child-margin);
 }
 
 /* TODO: - See last commit for previous changes made - Continue work on .hero */
