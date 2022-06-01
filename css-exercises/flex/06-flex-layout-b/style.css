@@ -104,24 +104,22 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* ! dev borders */
-  border: var(--border-first-child);
-  border-radius: var(--border-child-radius);
 }
 
 .information__content {
   display: flex;
-  /* ! dev borders */
-  border: var(--border-second-child);
-  border-radius: var(--border-child-radius);
-  margin: var(--border-child-margin);
+  justify-content: inherit;
 }
 
 .information__content__block {
   display: flex;
   flex-direction: column;
-  /* ! dev borders */
-  border: var(--border-third-child);
-  border-radius: var(--border-child-radius);
-  margin: var(--border-child-margin);
+  align-items: inherit;
+  justify-content: inherit;
 }
+
+
+/* * Quote */
+
+
+
