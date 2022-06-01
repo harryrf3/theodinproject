@@ -67,12 +67,17 @@ a {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  color: var(--hero-main-text);
 }
 
-/* .hero__text h1 {
-} */
+.hero__text h1 {
+  font-size: 48px;
+  font-weight: 800;
+  max-width: 15ch;
+}
 
 .hero__text sub {
+  font-size: 18px;
   max-width: 50ch;
 }
 
