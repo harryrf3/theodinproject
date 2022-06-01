@@ -96,3 +96,9 @@ a {
   width: 100%;
 }
 
+
+/* * Information */
+
+.information {
+  display: flex;
+}
