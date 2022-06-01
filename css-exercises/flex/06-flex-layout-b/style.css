@@ -136,3 +136,7 @@ a {
   align-items: center;
   justify-content: center;
 }
+
+.cta__container {
+  display: flex;
+}
