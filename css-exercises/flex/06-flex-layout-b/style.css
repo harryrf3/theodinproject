@@ -3,6 +3,7 @@
   --hero-main-text: #f9faf8;
   --hero-secondary-text: #e5e7eb;
   --header-logo-text: var(--hero-main-text);
+  --header-link-text: var(--hero-secondary-text);
   --background-color-action: #3882f6;
   --information-header-text: #1f2937;
   --background-color-gray: var(--hero-secondary-text);
@@ -36,7 +37,7 @@ a {
 .header__logo {
   font-size: 24px;
   font-weight: 800;
-  color: #f9faf8;
+  color: var(--header-logo-text);
 }
 
 .header__nav ul {
@@ -49,7 +50,7 @@ a {
   display: flex;
   justify-content: center;
   font-size: 18px;
-  color: #ebe7eb;
+  color: var(--header-link-text);
 }
 
 
@@ -75,9 +76,9 @@ a {
   max-width: 50ch;
 }
 
-/* .hero__button {
-
-} */
+.hero__button {
+  background: var(--background-color-action);
+}
 
 /* .hero__img {
 } */
