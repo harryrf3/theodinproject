@@ -6,156 +6,122 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <!-- ! Dev [start] -->
+  <script type="text/javascript" src="https://livejs.com/live.js"></script>
+  <!-- ! Dev [end] -->
   <title>Flex Layout</title>
 </head>
 
 <body>
 
+  <header class="header">
+    <div class="header__logo">
+      Header Logo
+    </div>
+    <nav class="header__nav">
+      <ul>
+        <li>
+          <a href="#">Header Link 1</a>
+        </li>
+        <li>
+          <a href="#">Header Link 2</a>
+        </li>
+        <li>
+          <a href="#">Header Link 3</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
   <main>
-
-    <header class="header">
-      <nav class="header__logo">
-        <p class="header__logo--text">
-          Header Logo
-        </p>
-      </nav>
-      <nav class="header__links">
-        <ul class="header__links--text">
-          <li>
-            <a href="#">
-              Header Link 1
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              Header Link 2
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              Header Link 3
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-
     <section class="hero">
       <div class="hero__text">
-        <div class="hero__text__container">
-          <h1 class="hero__text__container--heading">
-            This website is awesome
-          </h1>
-
-          <sub class="hero__text__container--subtext">
-            This website has some subtext that goes here under the main title. It's a smaller font and the color is
-            lower
-            contrast.
-          </sub>
-
-          <button class="hero__text__container--button">
-            Sign Up
-          </button>
-        </div>
-
-        <div class="hero__img">
-          <div class="hero__img__container">
-            <img src="https://via.placeholder.com/300x200" alt="" class="hero__img__container--img">
-          </div>
-        </div>
+        <h1>
+          This website is awesome
+        </h1>
+        <sub>
+          This website has some subtext that goes here under the main title. It's a smaller font and the color is lower
+          contrast
+        </sub>
+        <button class="hero__button">
+          Sign Up
+        </button>
       </div>
-    </section>
-
-
-    <section class="info">
-      <div class="info__header__container">
-        <h3 class="info__header__container--heading">
-          Some random information
-        </h3>
+      <div class="hero__img">
+        <img src="https://via.placeholder.com/250x150">
       </div>
+    </section> <!-- END .hero -->
 
-      <div class="info__cards__container">
-        <div class="info__img__container">
-          <img src="https://via.placeholder.com/150" alt="" class="info__img__container--img">
-          <sub class="info__img__container--text">
-            this is some subtext under an illustration or image
+
+    <section class="information">
+      <h3>Some random information</h3>
+
+      <div class="information__content">
+        <div class="information__content__block">
+          <img src="https://via.placeholder.com/150" alt="" class="information__content__block--img">
+          <sub class="information__content__block--subtext">
+            this is some subtext under and illustration or image
           </sub>
         </div>
 
-        <div class="info__img__container">
-          <img src="https://via.placeholder.com/150" alt="" class="info__img__container--img">
-          <sub class="info__img__container--text">
-            this is some subtext under an illustration or image
+        <div class="information__content__block">
+          <img src="https://via.placeholder.com/150" alt="" class="information__content__block--img">
+          <sub class="information__content__block--subtext">
+            this is some subtext under and illustration or image
           </sub>
         </div>
 
-        <div class="info__img__container">
-          <img src="https://via.placeholder.com/150" alt="" class="info__img__container--img">
-          <sub class="info__img__container--text">
-            this is some subtext under an illustration or image
+        <div class="information__content__block">
+          <img src="https://via.placeholder.com/150" alt="" class="information__content__block--img">
+          <sub class="information__content__block--subtext">
+            this is some subtext under and illustration or image
           </sub>
         </div>
 
-        <div class="info__img__container">
-          <img src="https://via.placeholder.com/150" alt="" class="info__img__container--img">
-          <sub class="info__img__container--text">
-            this is some subtext under an illustration or image
+        <div class="information__content__block">
+          <img src="https://via.placeholder.com/150" alt="" class="information__content__block--img">
+          <sub class="information__content__block--subtext">
+            this is some subtext under and illustration or image
           </sub>
         </div>
       </div>
-    </section>
+    </section> <!-- END .information -->
 
 
     <section class="quote">
-      <div class="quote__container">
-        <div class="quote__container--text">
-          <blockquote>
-            <i>
-              This is an inspiring quote, or testimonial from a customer. Maybe it's just filling up space, or maybe
-              people
-              will actually read it. Who knows? All I know is it looks nice.
-            </i>
-          </blockquote>
-        </div>
-
-        <div class="quote__container--signature">
-          <h3>
-            - Thor, God of Thunder
-          </h3>
-        </div>
-      </div>
-    </section>
-
+      <blockquote class="quote--text">
+        This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe
+        people will actually read it. Who knows? All I know is that it looks nice.
+      </blockquote>
+      <h4 class="quote--signature">- Thor, God of Thunder</h4>
+    </section> <!-- END .quote -->
 
     <section class="cta">
       <div class="cta__container">
-        <div class="cta__container__child">
-          <div class="cta__container__child--text">
-            <h3>
-              Call to action! It's time!
-            </h3>
-            <p>
-              Sign up for our product by clicking that button right over there!
-            </p>
-          </div>
 
-          <button class="cta__container--button">
-            Sign up
+        <div class="cta__container__text">
+          <h4>
+            Call to action! It's time!
+          </h4>
+          <p>
+            Sign up for our product by clicking that button right over there!
+          </p>
+        </div>
+
+        <div class="cta__button">
+          <button>
+            Sign Up
           </button>
         </div>
       </div>
-    </section>
-
+    </section> <!-- END .cta -->
   </main>
 
 
   <footer class="footer">
-    <p>
-      Copyright &copy; The Odin Project 2021
-    </p>
-  </footer> <!-- END .footer -->
-
+    Copyright &copy The Odin Project 2021
+  </footer>
 </body>
 
 </html>
