@@ -142,3 +142,12 @@ a {
   align-items: center;
   justify-content: center;
 }
+
+
+/* * Footer */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
