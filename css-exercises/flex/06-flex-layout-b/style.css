@@ -110,3 +110,7 @@ a {
   display: flex;
   flex-direction: column;
 }
+
+.information__content__blocks {
+  display: flex;
+}
