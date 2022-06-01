@@ -121,5 +121,7 @@ a {
 
 /* * Quote */
 
-
+.quote {
+  display: flex;
+}
 
