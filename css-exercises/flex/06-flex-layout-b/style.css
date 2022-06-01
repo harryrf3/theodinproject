@@ -111,7 +111,6 @@ a {
 
 .information__content {
   display: flex;
-  flex-direction: column;
   /* ! dev borders */
   border: var(--border-second-child);
   border-radius: var(--border-child-radius);
@@ -120,7 +119,7 @@ a {
 
 .information__content__block {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   /* ! dev borders */
   border: var(--border-third-child);
   border-radius: var(--border-child-radius);
