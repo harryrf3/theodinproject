@@ -114,6 +114,11 @@ a {
   justify-content: inherit;
 }
 
+.information h3 {
+  font-size: 36px;
+  font-weight: 800;
+}
+
 
 /* * Quote */
 
