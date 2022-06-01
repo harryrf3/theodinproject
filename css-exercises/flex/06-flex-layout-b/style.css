@@ -36,6 +36,14 @@ button {
 }
 
 
+/* main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+
 /* * Header */
 
 .header {
@@ -71,7 +79,7 @@ button {
 .hero {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   background: var(--background-color-dark);
 }
 
@@ -97,33 +105,23 @@ button {
   background: var(--background-color-action);
 }
 
-/* .hero__img {
-} */
-
-.hero__img img {
-  width: 100%;
-}
-
 
 /* * Information */
 
 .information {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .information__content {
   display: flex;
-  justify-content: inherit;
+  gap: 50px;
 }
 
 .information__content__block {
   display: flex;
   flex-direction: column;
-  align-items: inherit;
-  justify-content: inherit;
+  align-items: center;
 }
 
 .information h3 {
