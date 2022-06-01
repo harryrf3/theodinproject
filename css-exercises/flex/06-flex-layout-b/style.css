@@ -120,6 +120,12 @@ a {
   background: var(--background-color-gray);
 }
 
+.quote--text {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 300;
+}
+
 
 /* * Call to Action */
 
