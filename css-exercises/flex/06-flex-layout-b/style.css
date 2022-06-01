@@ -140,4 +140,5 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: var(--background-color-dark);
 }
