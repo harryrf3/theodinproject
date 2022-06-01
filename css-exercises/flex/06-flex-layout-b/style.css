@@ -128,3 +128,11 @@ a {
   justify-content: center;
 }
 
+
+/* * Call to Action */
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
