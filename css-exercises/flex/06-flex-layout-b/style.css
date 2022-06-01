@@ -106,13 +106,7 @@ a {
   justify-content: center;
 }
 
-.information__content__blocks {
-  display: flex;
-}
-
-.information__blocks {
+.information__content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
