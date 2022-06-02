@@ -76,6 +76,7 @@ button {
   justify-content: space-around;
   background: var(--background-color-dark);
   padding: var(--side-padding);
+  gap: 55px;
 }
 
 .hero__text {
@@ -89,12 +90,10 @@ button {
 .hero__text h1 {
   font-size: 48px;
   font-weight: 800;
-  max-width: 15ch;
 }
 
 .hero__text sub {
   font-size: 18px;
-  max-width: 50ch;
 }
 
 .hero__button {
