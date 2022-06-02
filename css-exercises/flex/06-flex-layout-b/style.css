@@ -97,7 +97,12 @@ button {
 }
 
 .hero__button {
+  color: var(--hero-secondary-text);
+  font-size: 16px;
+  font-weight: 600;
   background: var(--background-color-action);
+  margin: 15px 0;
+  padding: 10px 25px;
 }
 
 
