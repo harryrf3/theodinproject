@@ -9,7 +9,7 @@
   --background-color-action: #3882f6;
   --information-header-text: #1f2937;
   --background-color-gray: var(--hero-secondary-text);
-  --side-padding: 0 200px;
+  --side-padding: 0 210px;
 }
 
 * {
