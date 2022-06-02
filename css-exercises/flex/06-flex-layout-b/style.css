@@ -9,6 +9,7 @@
   --background-color-action: #3882f6;
   --information-header-text: #1f2937;
   --background-color-gray: var(--hero-secondary-text);
+  --side-padding: 0 200px;
 }
 
 * {
@@ -43,7 +44,7 @@ button {
   align-items: center;
   justify-content: space-between;
   background: var(--background-color-dark);
-  padding: 20px 0;
+  padding: var(--side-padding);
 }
 
 .header__logo {
@@ -65,12 +66,14 @@ button {
   color: var(--header-link-text);
 }
 
+
 /* * Hero */
 .hero {
   display: flex;
   align-items: center;
   justify-content: space-around;
   background: var(--background-color-dark);
+  padding: var(--side-padding);
 }
 
 .hero__text {
@@ -95,10 +98,12 @@ button {
   background: var(--background-color-action);
 }
 
+
 /* * Information */
 .information {
   display: flex;
   flex-direction: column;
+  padding: var(--side-padding);
 }
 
 .information__content {
@@ -117,6 +122,7 @@ button {
   font-weight: 800;
 }
 
+
 /* * Quote */
 .quote {
   display: flex;
@@ -124,6 +130,7 @@ button {
   align-items: center;
   justify-content: center;
   background: var(--background-color-gray);
+  padding: var(--side-padding);
 }
 
 .quote--text {
@@ -132,11 +139,13 @@ button {
   font-weight: 300;
 }
 
+
 /* * Call to Action */
 .cta {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: var(--side-padding);
 }
 
 .cta__container {
@@ -146,10 +155,12 @@ button {
   background: var(--background-color-action);
 }
 
+
 /* * Footer */
 .footer {
   display: flex;
   align-items: center;
   justify-content: center;
   background: var(--background-color-dark);
+  padding: var(--side-padding);
 }
