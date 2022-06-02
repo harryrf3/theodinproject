@@ -51,12 +51,14 @@ button {
   font-size: 24px;
   font-weight: 800;
   color: var(--header-logo-text);
+  margin-top: 25px;
 }
 
 .header__nav ul {
   display: flex;
   justify-content: center;
   gap: 30px;
+  margin-top: 25px;
 }
 
 .header__nav a {
@@ -81,6 +83,7 @@ button {
   align-items: flex-start;
   flex-direction: column;
   color: var(--hero-main-text);
+  margin: 140px 0;
 }
 
 .hero__text h1 {
