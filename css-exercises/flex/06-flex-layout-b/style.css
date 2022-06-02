@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-
 :root {
   --background-color-dark: #1f2937;
   --hero-main-text: #f9faf8;
@@ -37,21 +36,17 @@ button {
   border-radius: 4px;
 }
 
-
 /* main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 } */
 
 
 /* * Header */
-
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background: var(--background-color-dark);
   padding: 20px 0;
 }
@@ -75,9 +70,7 @@ button {
   color: var(--header-link-text);
 }
 
-
 /* * Hero */
-
 .hero {
   display: flex;
   align-items: center;
@@ -107,9 +100,7 @@ button {
   background: var(--background-color-action);
 }
 
-
 /* * Information */
-
 .information {
   display: flex;
   flex-direction: column;
@@ -131,9 +122,7 @@ button {
   font-weight: 800;
 }
 
-
 /* * Quote */
-
 .quote {
   display: flex;
   flex-direction: column;
@@ -148,9 +137,7 @@ button {
   font-weight: 300;
 }
 
-
 /* * Call to Action */
-
 .cta {
   display: flex;
   align-items: center;
@@ -164,9 +151,7 @@ button {
   background: var(--background-color-action);
 }
 
-
 /* * Footer */
-
 .footer {
   display: flex;
   align-items: center;
