@@ -34,7 +34,7 @@ a {
 
 button {
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 
@@ -135,7 +135,7 @@ button {
 .quote {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   background: var(--background-color-gray);
   padding: var(--side-padding);
