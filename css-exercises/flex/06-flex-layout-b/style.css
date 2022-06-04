@@ -48,8 +48,8 @@ button {
 }
 
 .header__logo {
-  font-size: 24px;
-  font-weight: 800;
+  font-size: 26px;
+  font-weight: 900;
   color: var(--header-logo-text);
   margin-top: 25px;
 }
