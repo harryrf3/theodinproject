@@ -133,6 +133,10 @@ button {
   border-radius: 20px;
 }
 
+.information__content__block img {
+  border-radius: 16px;
+}
+
 
 /* * Quote */
 .quote {
