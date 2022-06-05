@@ -115,6 +115,12 @@ button {
   padding: var(--side-padding);
 }
 
+.information h3 {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+
 .information__content {
   display: flex;
   gap: 50px;
@@ -123,11 +129,6 @@ button {
 .information__content__block {
   display: flex;
   flex-direction: column;
-}
-
-.information h3 {
-  font-size: 36px;
-  font-weight: 800;
 }
 
 
