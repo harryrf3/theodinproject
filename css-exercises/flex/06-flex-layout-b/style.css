@@ -183,11 +183,12 @@ button {
 .cta__container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background: var(--background-color-action);
   min-width: 1024px;
   padding: 54px 150px;
   border-radius: 12px;
+  color: var(--hero-secondary-text)
 }
 
 
