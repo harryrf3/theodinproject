@@ -207,4 +207,9 @@ button {
   justify-content: center;
   background: var(--background-color-dark);
   padding: var(--side-padding);
+  color: var(--hero-main-text);
+}
+
+.footer p {
+  padding: 25px;
 }
