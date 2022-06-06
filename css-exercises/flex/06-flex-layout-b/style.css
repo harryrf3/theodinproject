@@ -19,7 +19,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;__container
   display: flex;
   flex-direction: column;
 }
@@ -153,13 +153,17 @@ button {
   padding: var(--side-padding);
 }
 
-.quote--text {
-  font-size: 36px;
-  font-style: italic;
-  font-weight: 300;
+.quote__container {
+  margin: 120px 0;
 }
 
-.quote--signature {
+.quote__container--text {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 100;
+}
+
+.quote__container--signature {
   align-self: flex-end;
 }
 
