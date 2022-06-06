@@ -35,6 +35,8 @@ a {
 button {
   border: none;
   border-radius: 8px;
+  font-size: 18px;
+  font-weight: 900;
 }
 
 
@@ -191,7 +193,11 @@ button {
   color: var(--hero-secondary-text)
 }
 
-
+.cta__container--button button {
+  color: var(--hero-secondary-text);
+  background: none;
+  border: 2px solid var(--hero-secondary-text)
+}
 
 /* * Footer */
 .footer {
