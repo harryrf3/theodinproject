@@ -159,6 +159,10 @@ button {
   font-weight: 300;
 }
 
+.quote--signature {
+  align-self: flex-end;
+}
+
 
 /* * Call to Action */
 .cta {
