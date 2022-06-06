@@ -148,7 +148,6 @@ button {
 .quote {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   justify-content: center;
   background: var(--background-color-gray);
   padding: var(--side-padding);
