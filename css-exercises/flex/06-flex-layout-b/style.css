@@ -196,7 +196,8 @@ button {
 .cta__container--button button {
   color: var(--hero-secondary-text);
   background: none;
-  border: 2px solid var(--hero-secondary-text)
+  border: 2px solid var(--hero-secondary-text);
+  padding: 5px 25px;
 }
 
 /* * Footer */
