@@ -154,6 +154,8 @@ button {
 }
 
 .quote__container {
+  display: flex;
+  flex-direction: column;
   margin: 120px 0;
 }
 
@@ -165,6 +167,7 @@ button {
 
 .quote__container--signature {
   align-self: flex-end;
+  font-weight: 800;
 }
 
 
@@ -174,6 +177,7 @@ button {
   align-items: center;
   justify-content: center;
   padding: var(--side-padding);
+  margin: 120px 0;
 }
 
 .cta__container {
@@ -181,6 +185,9 @@ button {
   align-items: center;
   justify-content: center;
   background: var(--background-color-action);
+  min-width: 1024px;
+  padding: 54px 150px;
+  border-radius: 12px;
 }
 
 
