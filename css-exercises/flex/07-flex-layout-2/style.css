@@ -1,18 +1,6 @@
-:root {
-  /* ! Dev Border Colors [start] */
-  --border-first-child: 4px solid red;
-  --border-second-child: 4px solid green;
-  --border-third-child: 4px solid blue;
-  --border-fourth-child: 4px solid purple;
-  --border-fifth-child: 4px solid orange;
-  --border-sixth-child: 4px solid pink;
-  --border-child-radius: 10px;
-  --border-child-margin: 4px;
-  /* ! Dev Border Colors [end] */
-}
-
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
   margin: 0;
   min-height: 100vh;
   display: flex;
@@ -33,18 +21,13 @@ a {
   background: darkmagenta;
   color: white;
   display: flex;
-  /* ! dev borders */
-  border: var(--border-first-child);
-  border-radius: var(--border-child-radius);
 }
 
 .sidebar {
+  display: flex;
   min-width: 300px;
   height: 100vh;
   background: royalblue;
-  /* ! dev borders */
-  border: var(--border-first-child);
-  border-radius: var(--border-child-radius);
 }
 
 .main {
@@ -63,10 +46,6 @@ a {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0, 0, 0, .06);
   border-radius: 4px;
-  /* ! dev borders */
-  border: var(--border-second-child);
-  border-radius: var(--border-child-radius);
-  margin: var(--border-child-margin);
 }
 
 .footer {
@@ -74,7 +53,4 @@ a {
   background: #eee;
   color: darkmagenta;
   border-bottom-left-radius: 13px;
-  /* ! dev borders */
-  border: var(--border-first-child);
-  border-radius: var(--border-child-radius);
 }
