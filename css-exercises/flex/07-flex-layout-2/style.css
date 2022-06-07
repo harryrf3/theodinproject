@@ -12,12 +12,6 @@ body {
   color: white;
 }
 
-.footer {
-  height: 72px;
-  background: #eee;
-  color: darkmagenta;
-}
-
 .sidebar {
   width: 300px;
   background: royalblue;
@@ -27,4 +21,10 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0, 0, 0, .06);
   border-radius: 4px;
+}
+
+.footer {
+  height: 72px;
+  background: #eee;
+  color: darkmagenta;
 }
