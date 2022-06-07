@@ -39,7 +39,7 @@ a {
 }
 
 .sidebar {
-  width: 300px;
+  min-width: 300px;
   height: 100vh;
   background: royalblue;
   /* ! dev borders */
