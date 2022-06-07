@@ -47,6 +47,10 @@ a {
   border-radius: var(--border-child-radius);
 }
 
+.main {
+  display: flex;
+}
+
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0, 0, 0, .06);
