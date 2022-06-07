@@ -32,6 +32,7 @@ a {
   height: 72px;
   background: darkmagenta;
   color: white;
+  display: flex;
   /* ! dev borders */
   border: var(--border-first-child);
   border-radius: var(--border-child-radius);
