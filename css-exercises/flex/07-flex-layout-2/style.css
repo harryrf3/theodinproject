@@ -28,4 +28,5 @@ body {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  border-bottom-left-radius: 13px;
 }
