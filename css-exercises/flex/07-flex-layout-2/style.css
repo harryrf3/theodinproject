@@ -37,6 +37,8 @@ a {
 .content {
   display: flex;
   flex-wrap: wrap;
+  margin: 48px;
+  gap: 34px;
 }
 
 .card {
