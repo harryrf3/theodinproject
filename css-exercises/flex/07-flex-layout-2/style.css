@@ -44,8 +44,8 @@ a {
 
 .card {
   display: flex;
-  width: 330px;
-  height: 220px;
+  width: 400px;
+  height: 200px;
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0, 0, 0, .06);
   border-radius: 4px;
