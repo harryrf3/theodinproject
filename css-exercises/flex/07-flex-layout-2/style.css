@@ -24,16 +24,16 @@ a {
   display: flex;
 }
 
-.sidebar {
-  display: flex;
-  min-width: 300px;
-  height: 100vh;
-  background: royalblue;
-}
-
 .main {
   display: flex;
 }
+
+.sidebar {
+  display: flex;
+  min-width: 300px;
+  background: royalblue;
+}
+
 
 .content {
   display: flex;
