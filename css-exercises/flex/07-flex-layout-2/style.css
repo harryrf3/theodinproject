@@ -24,6 +24,11 @@ a {
   display: flex;
 }
 
+.header__text {
+  margin: 20px 15px;
+  font-weight: 900;
+}
+
 .main {
   display: flex;
 }
@@ -33,7 +38,6 @@ a {
   min-width: 300px;
   background: royalblue;
 }
-
 
 .content {
   display: flex;
