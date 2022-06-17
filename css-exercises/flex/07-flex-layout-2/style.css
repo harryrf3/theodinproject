@@ -61,11 +61,17 @@ a {
 
 .card {
   display: flex;
-  width: 400px;
-  height: 200px;
+  width: 315px;
+  height: 215px;
+  padding: 10px;
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0, 0, 0, .06);
   border-radius: 4px;
+}
+
+.card__text {
+  margin: 10px;
+  font-weight: 500;
 }
 
 .footer {
