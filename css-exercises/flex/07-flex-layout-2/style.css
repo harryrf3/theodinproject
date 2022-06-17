@@ -42,6 +42,16 @@ a {
   background: royalblue;
 }
 
+.sidebar__navigation {
+  margin: 20px 15px;
+}
+
+.sidebar__link {
+  padding-bottom: 30px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
 .content {
   display: flex;
   flex-wrap: wrap;
