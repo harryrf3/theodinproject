@@ -25,10 +25,11 @@ a {
   background: darkmagenta;
   color: white;
   display: flex;
+  align-content: center;
 }
 
 .header__text {
-  margin: 20px 15px;
+  margin: 20px 16px;
   font-weight: 900;
 }
 
@@ -43,7 +44,7 @@ a {
 }
 
 .sidebar__navigation {
-  margin: 20px 15px;
+  margin: 20px 16px;
 }
 
 .sidebar__link {
@@ -55,8 +56,8 @@ a {
 .content {
   display: flex;
   flex-wrap: wrap;
-  margin: 48px;
-  gap: 34px;
+  padding: 32px;
+  gap: 32px;
 }
 
 .card {
