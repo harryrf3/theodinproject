@@ -10,6 +10,15 @@ body {
   height: 100%;
 }
 
+/* 
+  First Child: red;
+  Second Child: green;
+  Third Child: blue;
+  Fourth Child: purple;
+  Fifth Child: orange;
+  Sixth Child: pink;
+ */
+
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
@@ -21,13 +30,15 @@ body {
 }
 
 
+
+
 /* * Modal Container */
 
 .modal {
   display: flex;
   background: white;
   width: 480px;
-  padding: 20px;
+  padding: 15px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0, 0, 0, .2);
 }
@@ -40,13 +51,23 @@ body {
 }
 
 
+/* * Flex Container */
+
+.flex-container {
+  display: flex;
+  border: 4px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, .2);
+}
+
+
 /* * Aside Container */
 
 .modal__aside {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  padding: 0 10px 0 2px;
+  padding-right: 15px;
 }
 
 .modal__aside__icon {
@@ -67,6 +88,7 @@ body {
 .modal__main {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 .modal__main__header {
@@ -131,12 +153,12 @@ button {
 
 // ? There is equal space on either side of the icon (the gaps between the icon and the edge of the card, and the icon and the text, are the same).
 
-? There is padding around the edge of the modal.
+// ? There is padding around the edge of the modal.
 
-? The header, text, and buttons are aligned with each other.
+// ? The header, text, and buttons are aligned with each other.
 
-? The header is bold and a slightly larger text-size than the text.
+// ? The header is bold and a slightly larger text-size than the text.
 
-? The close button is vertically aligned with the header, and aligned in the top-right of the card.
+// ? The close button is vertically aligned with the header, and aligned in the top-right of the card.
 
  */
