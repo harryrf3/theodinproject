@@ -161,13 +161,13 @@ button {
   margin: 120px 0;
 }
 
-.quote__container--text {
+.quote__container__text {
   font-size: 36px;
   font-style: italic;
   font-weight: 100;
 }
 
-.quote__container--signature {
+.quote__container__signature {
   align-self: flex-end;
   font-weight: 800;
 }
@@ -193,7 +193,7 @@ button {
   color: var(--hero-secondary-text)
 }
 
-.cta__container--button button {
+.cta__container__button button {
   color: var(--hero-secondary-text);
   background: none;
   border: 2px solid var(--hero-secondary-text);
