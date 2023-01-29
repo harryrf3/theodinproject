@@ -1,10 +1,11 @@
 const prompt = require('prompt-sync')();
 
 function playRound (playerSelection, computerSelection) {
-  let message;
+  getPlayerChoice();
+  getComputerChoice();
   // console.log(message);
   if (playerSelection == computerSelection) {
-    message = "Draw!";
+    return "Draw!";
   }
   else if (computerSelection == "Rock") {
     return playerSelection = "Paper" ? "You win!" : "You lose!";
@@ -15,15 +16,13 @@ function playRound (playerSelection, computerSelection) {
   else if (computerSelection == "Scissors") {
     return playerSelection = "Rock" ? "You win!" : "You lose!";
   }
-
-  return message;
 }
 
 const game = () => {
   for (let i = 0; i < 4; i++) {
-    playRound();
-    getPlayerChoice();
-    getComputerChoice();
+    console.log(getPlayerChoice());
+    console.log(getComputerChoice());
+    console.log(playRound());
   }
 };
 
@@ -42,8 +41,8 @@ const getComputerChoice = () => {
       break;
     case 3:
       computer = "Scissors";
+      break;
   }
-  // console.log(computer);
   return computer;
 };
 
@@ -51,7 +50,7 @@ const getComputerChoice = () => {
 // const computerSelection = "rock";
 const playerSelection = getPlayerChoice();
 const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
+// console.log(playRound(playerSelection, computerSelection));
 game();
 
 // /////////////////////////////////////////////////////////////////////////////
