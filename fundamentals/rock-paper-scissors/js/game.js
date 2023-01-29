@@ -20,8 +20,8 @@ function playRound (playerSelection, computerSelection) {
 
 const game = () => {
   for (let i = 0; i < 4; i++) {
-    console.log(getPlayerChoice());
-    console.log(getComputerChoice());
+    // console.log(getPlayerChoice());
+    // console.log(getComputerChoice());
     console.log(playRound());
   }
 };
