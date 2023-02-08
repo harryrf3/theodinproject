@@ -1,4 +1,9 @@
+// required for user input in console
+const prompt = require('prompt-sync')();
+
+// round conditionals
 function playRound (playerSelection, computerSelection) {
+
   // your code here!
   if (playerSelection == 'rock' && computerSelection == 'paper') {
     return 'Paper beats rock. You Lose!';
@@ -23,7 +28,7 @@ function playRound (playerSelection, computerSelection) {
     return 'Draw!';
   }
 
-  console.log(playerSelection, computerSelection);
+  // console.log(playerSelection, computerSelection);
 }
 //* working properly
 const getComputerChoice = () => {
@@ -43,9 +48,24 @@ const getComputerChoice = () => {
 };
 // console.log(getComputerChoice());
 
-const playerSelection = "rock";
+const getPlayerChoice = () => {
+  prompt("Rock, Paper, or Scissors? ");
+};
+
+const game = () => {
+  for (let i = 1; i < 5; i++) {
+    getComputerChoice();
+    getPlayerChoice();
+
+    playRound();
+  }
+};
+
+const playerSelection = getPlayerChoice();
 const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
+// console.log(playRound(playerSelection, computerSelection));
+console.log(game());
+
 
 
 
@@ -58,7 +78,7 @@ console.log(playRound(playerSelection, computerSelection));
 
 //////////////////////////////////////////////////////////////////////////////
 
-// const prompt = require('prompt-sync')();
+
 
 // function playRound (playerSelection, computerSelection) {
 //   // getPlayerChoice();
