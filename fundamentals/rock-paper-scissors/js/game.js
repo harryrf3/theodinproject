@@ -63,9 +63,8 @@ const game = () => {
 
 const playerSelection = getPlayerChoice();
 const computerSelection = getComputerChoice();
-// console.log(playRound(playerSelection, computerSelection));
-console.log(game());
-
+console.log(playRound(playerSelection, computerSelection));
+game()
 
 
 
