@@ -1,57 +1,117 @@
-const prompt = require('prompt-sync')();
-
 function playRound (playerSelection, computerSelection) {
-  getPlayerChoice();
-  getComputerChoice();
-  // console.log(message);
-  if (playerSelection == computerSelection) {
-    return "Draw!";
+  // your code here!
+  if (playerSelection == 'rock' && computerSelection == 'paper') {
+    return 'Paper beats rock. You Lose!';
   }
-  else if (computerSelection == "Rock") {
-    return playerSelection = "Paper" ? "You win!" : "You lose!";
+  if (playerSelection == 'paper' && computerSelection == 'scissors') {
+    return 'Scissors beat paper. You Lose!';
   }
-  else if (computerSelection == "Paper") {
-    return playerSelection = "Scissors" ? "You win!" : "You lose!";
+  if (playerSelection == 'scissors' && computerSelection == 'rock') {
+    return 'Rock beats scissors. You Lose!';
   }
-  else if (computerSelection == "Scissors") {
-    return playerSelection = "Rock" ? "You win!" : "You lose!";
+
+  if (computerSelection == 'rock' && playerSelection == 'paper') {
+    return 'Paper beats rock. You win!';
   }
+  if (computerSelection == 'paper' && playerSelection == 'scissors') {
+    return 'Scissors beat paper. You win!';
+  }
+  if (computerSelection == 'scissors' && playerSelection == 'rock') {
+    return 'Rock beats scissors. You win!';
+  }
+  if (computerSelection === computerSelection) {
+    return 'Draw!';
+  }
+
+  console.log(playerSelection, computerSelection);
 }
-
-const game = () => {
-  for (let i = 0; i < 4; i++) {
-    // console.log(getPlayerChoice());
-    // console.log(getComputerChoice());
-    console.log(playRound());
-  }
-};
-
-const getPlayerChoice = () => {
-  prompt("Rock, Paper, or Scissors? ");
-};
-
+//* working properly
 const getComputerChoice = () => {
   const choice = Math.floor(Math.random() * 3) + 1;
   switch (choice) {
     case 1:
-      computer = "Rock";
+      computer = "rock";
       break;
     case 2:
-      computer = "Paper";
+      computer = "paper";
       break;
     case 3:
-      computer = "Scissors";
+      computer = "scissors";
       break;
   }
   return computer;
 };
+// console.log(getComputerChoice());
 
-// const playerSelection = "scissors";
-// const computerSelection = "rock";
-const playerSelection = getPlayerChoice();
+const playerSelection = "rock";
 const computerSelection = getComputerChoice();
-// console.log(playRound(playerSelection, computerSelection));
-game();
+console.log(playRound(playerSelection, computerSelection));
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////
+
+// const prompt = require('prompt-sync')();
+
+// function playRound (playerSelection, computerSelection) {
+//   // getPlayerChoice();
+//   // getComputerChoice();
+//   // console.log(message);
+//   if (playerSelection === computerSelection) {
+//     return "Draw!";
+//   }
+//   if (computerSelection == "Rock") {
+//     return playerSelection = "Paper" ? "You win!" : "You lose!";
+//   }
+//   if (computerSelection == "Paper") {
+//     return playerSelection = "Scissors" ? "You win!" : "You lose!";
+//   }
+//   if (computerSelection == "Scissors") {
+//     return playerSelection = "Rock" ? "You win!" : "You lose!";
+//   }
+// }
+
+// const game = () => {
+//   for (let i = 0; i < 4; i++) {
+//     console.log(getPlayerChoice()); 
+//     console.log(getComputerChoice());
+//     console.log(playRound());
+//   }
+// };
+
+// const getPlayerChoice = () => {
+//   prompt("Rock, Paper, or Scissors? ");
+// };
+
+// const getComputerChoice = () => {
+//   const choice = Math.floor(Math.random() * 3) + 1;
+//   switch (choice) {
+//     case 1:
+//       computer = "Rock";
+//       break;
+//     case 2:
+//       computer = "Paper";
+//       break;
+//     case 3:
+//       computer = "Scissors";
+//       break;
+//   }
+//   return computer;
+// };
+
+// // const playerSelection = "scissors";
+// // const computerSelection = "rock";
+// const playerSelection = getPlayerChoice();
+// const computerSelection = getComputerChoice();
+// // console.log(playRound(playerSelection, computerSelection));
+// game();
 
 // /////////////////////////////////////////////////////////////////////////////
 // function game () {
