@@ -6,23 +6,23 @@ function playRound (playerSelection, computerSelection) {
   if (computerSelection === playerSelection) {
     return 'Draw!';
   }
-  else if (playerSelection == 'rock' && computerSelection == 'paper') {
+  else if (playerSelection === 'rock' && computerSelection === 'paper') {
     return 'Paper beats rock. You Lose!';
   }
-  else if (playerSelection == 'paper' && computerSelection == 'scissors') {
+  else if (playerSelection === 'paper' && computerSelection === 'scissors') {
     return 'Scissors beat paper. You Lose!';
   }
-  else if (playerSelection == 'scissors' && computerSelection == 'rock') {
+  else if (playerSelection === 'scissors' && computerSelection === 'rock') {
     return 'Rock beats scissors. You Lose!';
   }
 
-  else if (computerSelection == 'rock' && playerSelection == 'paper') {
+  else if (computerSelection === 'rock' && playerSelection === 'paper') {
     return 'Paper beats rock. You win!';
   }
-  else if (computerSelection == 'paper' && playerSelection == 'scissors') {
+  else if (computerSelection === 'paper' && playerSelection === 'scissors') {
     return 'Scissors beat paper. You win!';
   }
-  else if (computerSelection == 'scissors' && playerSelection == 'rock') {
+  else if (computerSelection === 'scissors' && playerSelection === 'rock') {
     return 'Rock beats scissors. You win!';
   }
 }
@@ -30,11 +30,12 @@ function playRound (playerSelection, computerSelection) {
 const getComputerChoice = () => {
   const choices = ['rock', 'paper', 'scissors'];
   const randomChoice = Math.floor(Math.random() * choices.length);
+  console.log(choices[randomChoice]);
   return choices[randomChoice];
 };
 
 const getPlayerChoice = () => {
-  prompt("Rock, Paper, or Scissors? ").toLowerCase();
+ return prompt("Rock, Paper, or Scissors? ");
 };
 
 const game = () => {
