@@ -10,12 +10,13 @@ const buttons = document.querySelector('.buttons');
 
 let playerScore = 0;
 let computerScore = 0;
-
-pScore.textContent = `${playerScore}`;
-pScore.style.color = 'red'
-cScore.textContent = 'hello world';
-cScore.style.color = 'red'
-rMessage.textContent = 'Hello world';
+const showScore = () => {
+  pScore.innerText = `${playerScore}`;
+  pScore.style.color = 'red'
+  cScore.innerText = 'hello world';
+  cScore.style.color = 'red'
+  rMessage.innerText = 'Hello world'
+}
 
 // round conditionals
 const playRound = (playerSelection, computerSelection) => {
@@ -79,3 +80,4 @@ const game = () => {
   }
 };
 game();
+showScore();
