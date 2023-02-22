@@ -1,0 +1,34 @@
+body {
+  padding: 0;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 3px solid black;
+  height: 400px;
+}
+
+.scores {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-around;
+  font-size: 90px;
+}
+
+.roundMessage {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}

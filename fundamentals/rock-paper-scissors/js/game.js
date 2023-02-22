@@ -1,11 +1,24 @@
 // required for user input in console
 const prompt = require('prompt-sync')();
 
+const pScore = document.querySelector('.playerScore');
+const cScore = document.querySelector('.computerScore');
+const rMessage = document.querySelector('.roundMessage');
+const buttons = document.querySelector('.buttons');
+
+
+
 let playerScore = 0;
 let computerScore = 0;
 
+pScore.textContent = `${playerScore}`;
+pScore.style.color = 'red'
+cScore.textContent = 'hello world';
+cScore.style.color = 'red'
+rMessage.textContent = 'Hello world';
+
 // round conditionals
-const playRound  = (playerSelection, computerSelection) => {
+const playRound = (playerSelection, computerSelection) => {
   if (computerSelection === playerSelection) {
     playerScore++;
     computerScore++;
@@ -36,8 +49,8 @@ const playRound  = (playerSelection, computerSelection) => {
     playerScore++;
     return 'Rock beats scissors. You win!';
   }
-  console.log(playerScore, computerScore)
-}
+  console.log(playerScore, computerScore);
+};
 
 const getComputerChoice = () => {
   const choices = ['rock', 'paper', 'scissors'];
