@@ -1,8 +1,6 @@
 // required for user input in console
 // const prompt = require('prompt-sync')();
 
-const { rm } = require("fs");
-
 const pScore = document.querySelector('.playerScore');
 const cScore = document.querySelector('.computerScore');
 const rMessage = document.querySelector('.roundMessage');
