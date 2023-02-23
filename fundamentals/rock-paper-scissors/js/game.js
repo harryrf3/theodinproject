@@ -1,55 +1,46 @@
 // required for user input in console
-const prompt = require('prompt-sync')();
+// const prompt = require('prompt-sync')();
+
+const { rm } = require("fs");
 
 const pScore = document.querySelector('.playerScore');
 const cScore = document.querySelector('.computerScore');
 const rMessage = document.querySelector('.roundMessage');
 const buttons = document.querySelector('.buttons');
+const rock = document.querySelector('.rock');
+
 
 
 
 let playerScore = 0;
 let computerScore = 0;
 
-pScore.innerText = `${playerScore}`;
-pScore.style.color = 'red';
-cScore.innerText = 'hello world';
-cScore.style.color = 'red';
-rMessage.innerText = 'Hello world';
 
 // round conditionals
 const playRound = (playerSelection, computerSelection) => {
   if (computerSelection === playerSelection) {
     playerScore++;
     computerScore++;
+    pScore.innerText = `${playerScore}`;
+    cScore.innerText = `${computerScore}`;
+    rMessage.innerText = 'Draw';
     return 'Draw!';
   }
-  else if (playerSelection === 'rock' && computerSelection === 'paper') {
+  // player loss
+  else if ((playerSelection === 'rock' && computerSelection === 'paper') ||
+    (playerSelection === 'paper' && computerSelection === 'scissors') ||
+    (playerSelection === 'scissors' && computerSelection === 'rock')) {
     computerScore++;
-    return 'Paper beats rock. You Lose!';
-  }
-  else if (playerSelection === 'paper' && computerSelection === 'scissors') {
-    computerScore++;
-    return 'Scissors beat paper. You Lose!';
-  }
-  else if (playerSelection === 'scissors' && computerSelection === 'rock') {
-    computerScore++;
-    return 'Rock beats scissors. You Lose!';
+    return rMessage.innerText = `You lose, ${computerSelection} beats ${playerSelection}.`;
   }
 
-  else if (computerSelection === 'rock' && playerSelection === 'paper') {
+  // player win
+  else if ((computerSelection === 'rock' && playerSelection === 'paper') ||
+    (computerSelection === 'paper' && playerSelection === 'scissors') ||
+    (computerSelection === 'scissors' && playerSelection === 'rock')) {
     playerScore++;
-    return 'Paper beats rock. You win!';
+    return rMessage.innerText = `You win, ${computerSelection} beats ${playerSelection}.`;
   }
-  else if (computerSelection === 'paper' && playerSelection === 'scissors') {
-    playerScore++;
-    return 'Scissors beat paper. You win!';
-  }
-  else if (computerSelection === 'scissors' && playerSelection === 'rock') {
-    playerScore++;
-    return 'Rock beats scissors. You win!';
-  }
-  console.log(playerScore, computerScore);
 };
 
 const getComputerChoice = () => {
@@ -59,13 +50,16 @@ const getComputerChoice = () => {
 };
 
 const getPlayerChoice = () => {
-  return prompt("Rock, Paper, or Scissors? ").toLowerCase();
+  // return prompt("Rock, Paper, or Scissors? ").toLowerCase();
+  return 'rock'; // testing
 };
 
 const gameScore = () => {
   if (playerScore > computerScore) {
+    rMessage.innerText = `You win with a score of ${playerScore}`;
     return `You win with a score of ${playerScore}`;
   } else {
+    rMessage.innerText = `The computer wins with a score of ${computerScore}`;
     return `The computer wins with a score of ${computerScore}`;
   }
 };
