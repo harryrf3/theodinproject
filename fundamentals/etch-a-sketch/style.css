@@ -1,0 +1,26 @@
+body {
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  text-align: center;
+}
+
+.color-mode {
+  height: 50px;
+  border: 1px solid black;
+}
+
+.sketch {
+  border: 1px solid black;
+  height: 400px;
+  width: 400px;
+}
