@@ -12,6 +12,7 @@ const scissors = document.querySelector('.scissors');
 let playerScore = 0;
 let computerScore = 0;
 let playerChoice;
+let round = 0;
 
 
 // round conditionals
@@ -53,30 +54,26 @@ const getComputerChoice = () => {
 };
 
 
-// const getPlayerChoice = () => {
-  buttons.forEach((button) => {
-    button.addEventListener('click', (e) => {
-      rMessage.innerText = `clicked on ${button.id}`
-      playerChoice = button.id;
-      console.log(button.id)
-      if(playerChoice === 'rock') {
-        playerChoice = 'rock'
-        console.log(button.id)
-        return playerChoice
-      }
-      if(playerChoice == 'paper') {
-        playerChoice = 'paper'
-        console.log(button.id)
-        return playerChoice
-      }
-      if(playerChoice == 'scissors') {
-        playerChoice = 'scissors'
-        console.log(button.id)
-        return playerChoice
-      }
-    })
-  })
-// };
+buttons.forEach((button) => {
+  button.addEventListener('click', (e) => {
+    playerChoice = button.id;
+    if (playerChoice === 'rock') {
+      playerChoice = 'rock';
+      console.log(button.id);
+      game()
+    }
+    if (playerChoice == 'paper') {
+      playerChoice = 'paper';
+      console.log(button.id);
+      game()
+    }
+    if (playerChoice == 'scissors') {
+      playerChoice = 'scissors';
+      console.log(button.id);
+      game()
+    }
+  });
+});
 
 
 const gameScore = () => {
@@ -91,10 +88,11 @@ const gameScore = () => {
 
 
 const game = () => {
-  for (let i = 1; i <= 5; i++) {
-    const playerSelection = getPlayerChoice();
+  if (round < 5) {
+    const playerSelection = playerChoice;
     const computerSelection = getComputerChoice();
     console.log(playRound(playerSelection, computerSelection));
+    round++
     gameScore();
   }
 };
