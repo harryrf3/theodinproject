@@ -93,6 +93,8 @@ const game = () => {
     const computerSelection = getComputerChoice();
     console.log(playRound(playerSelection, computerSelection));
     round++
-    gameScore();
+  }
+  if (round == 5) {
+    setTimeout(gameScore, 2000)
   }
 };
