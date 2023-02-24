@@ -4,14 +4,14 @@
 const pScore = document.querySelector('.playerScore');
 const cScore = document.querySelector('.computerScore');
 const rMessage = document.querySelector('.roundMessage');
-const buttons = document.querySelector('.buttons');
+const buttons = document.querySelectorAll('.btn');
 const rock = document.querySelector('.rock');
-const paper = document.querySelector('paper');
+const paper = document.querySelector('.paper');
 const scissors = document.querySelector('.scissors');
-
 
 let playerScore = 0;
 let computerScore = 0;
+let playerChoice;
 
 
 // round conditionals
@@ -53,11 +53,30 @@ const getComputerChoice = () => {
 };
 
 
-const getPlayerChoice = () => {
-  // return prompt("Rock, Paper, or Scissors? ").toLowerCase();
-  
-  return 'rock'; // testing
-};
+// const getPlayerChoice = () => {
+  buttons.forEach((button) => {
+    button.addEventListener('click', (e) => {
+      rMessage.innerText = `clicked on ${button.id}`
+      playerChoice = button.id;
+      console.log(button.id)
+      if(playerChoice === 'rock') {
+        playerChoice = 'rock'
+        console.log(button.id)
+        return playerChoice
+      }
+      if(playerChoice == 'paper') {
+        playerChoice = 'paper'
+        console.log(button.id)
+        return playerChoice
+      }
+      if(playerChoice == 'scissors') {
+        playerChoice = 'scissors'
+        console.log(button.id)
+        return playerChoice
+      }
+    })
+  })
+// };
 
 
 const gameScore = () => {
@@ -79,6 +98,3 @@ const game = () => {
     gameScore();
   }
 };
-
-
-game();
