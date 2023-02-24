@@ -2,9 +2,14 @@ body {
   padding: 0;
 }
 
+h3 {
+  text-align: center;
+}
+
 .container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .choices {
@@ -19,8 +24,38 @@ body {
   border: 1px solid black;
 }
 
-.sketch {
+.rainbow-mode {
+  height: 50px;
+  border: 1px solid black;
+}
+
+.eraser {
+  height: 50px;
+  border: 1px solid black;
+}
+
+.clear {
+  height: 50px;
+  border: 1px solid black;
+}
+
+/* .sketch {
+  display: grid;
   border: 1px solid black;
   height: 400px;
   width: 400px;
+} */
+
+.sketch {
+  display: grid;
+  width: 400px;
+  height: 400px;
+  grid-template-columns: repeat(var(--n, 32), 1fr);
+  /* number of column here*/
+  background-color: white;
+  border: solid black 2px;
+}
+
+.cell {
+  border: solid black 1px;
 }
