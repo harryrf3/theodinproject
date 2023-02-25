@@ -1,0 +1,50 @@
+.container {
+  /* display: flex;
+  flex-direction: column; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 400px;
+}
+
+.display {
+  max-width: 400px;
+  height: 150px;
+  border: 1px solid black;
+}
+
+.first-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.second-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.third-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.fourth-row {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.divide,
+.multiply,
+.minus,
+.plus,
+.equals,
+.decimal,
+.num {
+  border: 1px solid black;
+  font-size: 74px;
+  text-align: center;
+  flex-grow: 1;
+}
