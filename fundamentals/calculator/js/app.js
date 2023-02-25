@@ -15,38 +15,41 @@ buttons.forEach(button => {
 });
 
 
+clear.addEventListener('click', clearDisplay);
 
-const updateDisplay = (button) => {
+
+function updateDisplay(button) {
   calculation.push(button.textContent);
   display.textContent = calculation.join('');
 };
 
 
-const clearDisplay = () => {
+function clearDisplay() {
   calculation = [];
+  display.textContent = calculation.join('');
 };
 
 
-const add = (num1, num2) => {
+function add(num1, num2) {
   return num1 + num2;
-};
+}
 
 
-const subtract = (num1, num2) => {
+function subtract(num1, num2) {
   return num1 - num2;
-};
+}
 
 
-const multiply = (num1, num2) => {
+function multiply(num1, num2) {
   return num1 * num2;
-};
+}
 
 
-const divide = (num1, num2) => {
+function divide(num1, num2) {
   return num1 / num2;
-};
+}
 
 
-const operate = (button) => {
+function operate(button) {
   console.log(button.textContent);
-};
+}
