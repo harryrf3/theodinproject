@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enter Data</title>
+</head>
+<body>
+  <!-- 
+  To make a form interactive, you need to add form elements. There are controls to enter and select data, elements that describe controls, elements that group fields, and buttons to submit a form.
+ -->
+
+ <form>
+  <label for="color">What is your favorite color?</label>
+  <input type="text" id="color" name="color">
+ </form>
+<br/>
+ <!-- Input Type Checkbox -->
+ <form>
+  <input type="checkbox" id="subscribe" name="subscribe" value="web.dev">
+  <label for="subscribe">Subscribe to web.dev</label>
+  <button>Save</button>
+ </form>
+<br/>
+ <!-- Comments -->
+ <form>
+  <label for="comment">Comment</label>
+  <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+ </form>
+ <br/>
+<!-- Dropdown (multichoice) with pre-selection -->
+<form>
+  <label for="color">Color</label>
+  <select name="color" id="color">
+    <option value="orange">Orange</option>
+    <option selected value="pink">Pink</option>
+  </select>
+</form>
+<br/>
+<!-- Grouping form controls -->
+<fieldset>
+  <legend>What is your favorite web technology?</legend>
+  <label for="html">HTML</label>
+  <input type="radio" name="webfeature" value="html" id="html">
+  <br/>
+  <label for="css">CSS</label>
+  <input type="radio" name="webfeature" value="css" id="css">
+</fieldset>
+</body>
+</html>
