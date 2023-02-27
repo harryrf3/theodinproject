@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Faux Sign Up</title>
+</head>
+<body>
+  <div class="container">
+    <div class="left-wrapper">
+      <div class="odin">
+        <img src="odin-lined.png" class="odin-image">
+        <span>ODIN</span>
+      </div>
+    </div>
+    <div class="right-wrapper">
+      <h3 class="info">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</h3>
+      <h3 class="cta">You <em>know</em> you want to.</h3>
+      <div class="card">
+        <h3>Let's do this!</h3>
+        <form action="POST">
+          <div class="first-row">
+            <label for="name" id="first-name">First Name:</label>
+            <input type="text" name="text">
+            <label for="name" id="last-name">Last Name:</label>
+            <input type="text" name="text">
+          </div>
+          <div class="second-row">
+            <label for="email" id="email">Email:</label>
+            <input type="email" required>
+            <label for="tel">Phone:</label>
+            <input type="tel">
+          </div>
+          <div class="third-row">
+            <label for="password">Password:</label>
+            <input type="password" name="password" class="password" required>
+            <label for="password">Re-enter Password:</label>
+            <input type="password" name="password" class="password" required>
+          </div>
+        </form>
+      </div>
+      <button>Save</button>
+    </div>
+  </div>
+</body>
+</html>
