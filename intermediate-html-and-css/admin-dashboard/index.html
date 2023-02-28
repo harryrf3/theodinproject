@@ -4,9 +4,64 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="//code.iconify.design/1/1.0.6/iconify.min.js"></script>
   <title>Admin Dashboard</title>
 </head>
 <body>
-  
+  <div class="container">
+    <div class="sidebar">
+      <div class="logo">Dashboard</div>
+      <nav class="nav__top">
+        <li>
+          <span class="iconify" data-icon="mdi-house" style="color: white;" width="1.5rem" height="1.5rem"></span>
+          <a href="#">Home</a>
+        </li>
+        <li id="profile">
+          <span class="iconify" data-icon="mdi-account" style="color: white;" width="1.5rem" height="1.5rem"></span>
+          <a href="#">Profile</a>
+        </li>
+        <li id="messages">
+          <span class="iconify" data-icon="mdi-message-reply" style="color: white;" width="1.5rem" height="1.5rem"></span>
+          <a href="#">Messages</a>
+        </li>
+        <li id="history">
+          <span class="iconify" data-icon="mdi-clock-time-five-outline" style="color: white;" width="1.5rem" height="1.5rem"></span>
+          <a href="#">History</a>
+        </li>
+        <li id="tasks">
+          <span class="iconify" data-icon="mdi-note-multiple" style="color: white;" width="1.5rem" height="1.5rem"></span>
+          <a href="#">Tasks</a>
+        </li>
+        <li id="communites">
+          <span class="iconify" data-icon="mdi-account-group" style="color: white;" width="1.5rem" height="1.5rem"></span>
+          <a href="#">Community</a>
+        </li>
+      </nav>
+      <nav class="nav__bottom">
+        <li id="settings">
+          <span class="iconify" data-icon="mdi-cog" style="color: white;" width="1.5rem" height="1.5rem"></span>
+          <a href="#">Settings</a>
+        </li>
+        <li id="support">
+          <span class="iconify" data-icon="mdi-help-circle" style="color: white;" width="1.5rem" height="1.5rem"></span>  
+          <a href="#">Support</a>
+        </li>
+        <li id="privacy">
+          <span class="iconify" data-icon="mdi-shield-check" style="color: white;" width="1.5rem" height="1.5rem"></span>
+          <a href="#">Privacy</a>
+        </li>
+      </nav>
+    </div>
+    <header class='header'>
+      <div class="search-bar">
+        <input type="text">
+      </div>
+      <div class="user-info"></div>
+      <button>New</button>
+      <button>Upload</button>
+      <button>Share</button>
+    </header>
+  </div>
 </body>
 </html>
