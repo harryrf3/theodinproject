@@ -17,7 +17,7 @@ body {
     'sidebar main main main'
     'sidebar main main main';
   grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr 3fr;
+  grid-template-rows: auto 3fr;
   height: 100vh;
 }
 
@@ -27,20 +27,20 @@ body {
   grid-template-areas:
   'header header announcement'
   'project project announcement'
-  'project project announcement'
+  'project project trending'
   'project project trending'
   ;
-  /* background: #1992D4; */
 }
 
 .header {
   grid-area: header;
   display: grid;
   background: #FFF;
+  height: 90px
 }
 
 .header__top {
-  grid-template-columns: span 1 / -1;
+  grid-template-columns: span 2 / -1;
 }
 
 .sidebar {
