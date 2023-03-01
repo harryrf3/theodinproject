@@ -25,10 +25,10 @@ body {
   grid-area: main;
   display: grid;
   grid-template-areas:
-  'header header announcement'
-  'project project announcement'
-  'project project trending'
-  'project project trending'
+    'h3 h3 announcement'
+    'project project announcement'
+    'project project trending'
+    'project project trending'
   ;
 }
 
@@ -36,11 +36,70 @@ body {
   grid-area: header;
   display: grid;
   background: #FFF;
-  height: 90px
 }
 
 .header__top {
-  grid-template-columns: span 2 / -1;
+  display: grid;
+  background: white;
+  grid-template-areas:
+    'searchbar searchbar info'
+  ;
+}
+
+.top-right-container {
+  display: grid;
+  grid-template-areas:
+    'bell picture name'
+  ;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.search {
+  grid-area: searchbar;
+}
+
+.bell {
+  grid-area: bell;
+}
+
+.picture {
+  grid-area: picture;
+}
+
+img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.name {
+  grid-area: name;
+}
+
+.buttons {
+  display: grid;
+  grid-area: button;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+button {
+  border-radius: 10px;
+  background: #1992D4;
+  border: none;
+}
+
+.header__bottom {
+  display: grid;
+  grid-template-areas: 
+  'picture picture button button button'
+  ;
+  align-items: center;
+  background: white;
+}
+
+.name > a {
+  color: black;
 }
 
 .sidebar {
@@ -69,25 +128,23 @@ a {
 .projects {
   display: grid;
   grid-area: project;
-  grid-template-areas: 
-  'card1 card2'
-  'card3 card4'
-  'card5 card6';
+  grid-template-areas:
+    'card1 card2'
+    'card3 card4'
+    'card5 card6';
 }
 
 .projects {
-  border: 1px solid rgb(0, 185, 46);
   gap: 16px;
   margin: 5px;
 }
 
-.main > h3 {
+.main>h3 {
   margin-left: 5px;
 }
 
 .card {
-  border: 1px solid red;
-  height: 135px;
+  height: 250px;
   width: 250px;
   background: white;
   border-radius: 4px;
@@ -103,6 +160,7 @@ a {
   height: auto;
   width: 180px;
   border-radius: 4px;
+  padding: 10px;
 }
 
 .trending {
@@ -114,4 +172,9 @@ a {
   height: 215px;
   width: 180px;
   border-radius: 4px;
+  padding: 10px;
+}
+
+.img-wrapper {
+  display: grid;
 }
