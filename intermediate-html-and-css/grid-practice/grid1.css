@@ -1,0 +1,15 @@
+.container {
+  max-width: 960px;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.item {
+  background: steelblue;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px;
+  border: skyblue 1px solid;
+}
