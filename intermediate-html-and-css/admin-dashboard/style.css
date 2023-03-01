@@ -18,7 +18,7 @@ body {
     'sidebar main main main';
   grid-template-columns: 1fr 3fr;
   grid-template-rows: auto 3fr;
-  height: 100vh;
+  height: auto;
 }
 
 .main {
@@ -47,6 +47,7 @@ body {
   grid-area: sidebar;
   background: #1992D4;
   display: grid;
+  padding: 10px;
 }
 
 .logo {
@@ -74,26 +75,43 @@ a {
   'card5 card6';
 }
 
-.projects > h3 {
-  grid-template-columns: span 1 / 3;
-}
-
 .projects {
   border: 1px solid rgb(0, 185, 46);
   gap: 16px;
   margin: 5px;
 }
 
+.main > h3 {
+  margin-left: 5px;
+}
+
 .card {
   border: 1px solid red;
-  height: 145px;
+  height: 135px;
   width: 250px;
+  background: white;
+  border-radius: 4px;
+  padding: 10px;
 }
 
 .announcement {
   grid-area: announcement;
 }
 
+.announcement__card {
+  background-color: white;
+  height: auto;
+  width: 180px;
+  border-radius: 4px;
+}
+
 .trending {
   grid-area: trending;
+}
+
+.trending__card {
+  background-color: white;
+  height: 215px;
+  width: 180px;
+  border-radius: 4px;
 }
