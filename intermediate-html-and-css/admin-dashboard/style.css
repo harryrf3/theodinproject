@@ -31,3 +31,19 @@ a {
   color: white;
   text-decoration: none;
 }
+
+header {
+  display: grid;
+
+}
+
+.main {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
