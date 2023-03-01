@@ -6,7 +6,8 @@ body {
   min-width: 650px;
 }
 
-.container, .main, .header {
+/* for testing */
+.container, .main, .header, .header__top, .header__bottom {
   border: 1px solid coral
 }
 
@@ -29,11 +30,18 @@ body {
 
 .header {
   grid-area: header;
+  display: grid;
   background: #1992D4;
 }
+
+.header__top {
+  grid-template-columns: span 1 / -1;
+}
+
 .sidebar {
   grid-area: sidebar;
   background: #1992D4;
+  display: grid;
 }
 
 

@@ -35,6 +35,8 @@ nav {
 /* Setting Grid Areas */
 header {
   grid-area: header;
+  display: grid;
+
 }
 
 nav {
