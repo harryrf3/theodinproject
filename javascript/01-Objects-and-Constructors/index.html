@@ -4,17 +4,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Book Library</title>
 </head>
 <body>
-  <form action="#">
-    <h2>Enter a book</h2>
-    <label for="book">Book</label>
-    <input type="text" name="book"><br>
-    <label for="author">Author</label>
-    <input type="text" name="author">
-    <button>Enter</button>
-  </form>
+  <div class="container">
+    <form class="form" action="#">
+      <h2>Enter a book</h2>
+      <label for="title">Title</label>
+      <input id="title" type="text" name="title">
+      <label for="author">Author</label>
+      <input id="author" type="text" name="author">
+      <label for="pages">Pages</label>
+      <input id="pages" type="pages" name="pages">
+      <button id="button">Enter</button>
+    </form>
+  </div>
   <script src="js/index.js"></script>
 </body>
 </html>
