@@ -12,7 +12,8 @@ const form = document.querySelector('.form');
 const title = form.querySelector('#title');
 const author = form.querySelector('#author');
 const pages = form.querySelector('#pages');
-const button = document.querySelector('#button');
+const submit = document.querySelector('[type="submit"]');
+const displayForm = document.querySelector('#button')
 
 
 function Book(title, author, pages, read) {
@@ -24,28 +25,33 @@ function Book(title, author, pages, read) {
 
 
 function addBookToLibrary() {
-  let inputTitle = title.value;
-  let inputAuthor = author.value;
-  let inputPages = pages.value;
+  const inputTitle = title.value;
+  const inputAuthor = author.value;
+  const inputPages = pages.value;
   // let inputRead = getReadValue();
-  let newBook = new Book(inputTitle, inputAuthor, inputPages);
+  const newBook = new Book(inputTitle, inputAuthor, inputPages);
   library.push(newBook);
 }
 
+displayForm.addEventListener('click', () => {
+  form.style.display = 'grid'
+})
 
-button.addEventListener('click', (e) => {
+submit.addEventListener('click', (e) => {
   e.preventDefault();
   addBookToLibrary();
   displayBooks();
   form.reset();
 });
 
+
 function displayBooks() {
-  return `
-  <div class='display'>
-    <p>Title: ${title.value}
-  </div>
-  `
+  const p = document.createElement('p')
+  p.textContent = library;
+  // p.textContent = author.value;
+  p.style.color = 'black'
+  document.body.appendChild(p)
+  const div = document.createElement('div')
 }
 
 
