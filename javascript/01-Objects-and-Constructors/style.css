@@ -4,9 +4,24 @@ body {
   padding: 0;
   background: linear-gradient(to bottom, #cccaae 0%, #744360 100%) no-repeat;
   height: 100vh;
+  font-family: Roboto;
 }
 
 .form {
   display: grid;
   justify-content: center;
+}
+
+.display {
+  height: 100px;
+  width: 100px;
+}
+
+#button {
+  display: block;
+  margin: 0 auto;
+  background: #8d5275;
+  padding: 10px;
+  color: white;
+  font-size: 16px;
 }
