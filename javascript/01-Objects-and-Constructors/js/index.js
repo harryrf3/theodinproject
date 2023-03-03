@@ -60,6 +60,7 @@ function displayBooks() {
         <p>Author: ${book.author}</p>
         <p>Pages: ${book.pages}</p>
         <button class='remove' onclick='removeBookFromLibrary(${i})'>Remove Book</button>
+        <input type="checkbox" id="switch" /><label for="switch">Read?</label>
       </div>
     `;
     wrapper.appendChild(bookEl);
