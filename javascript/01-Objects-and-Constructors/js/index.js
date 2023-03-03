@@ -13,7 +13,7 @@ const title = form.querySelector('#title');
 const author = form.querySelector('#author');
 const pages = form.querySelector('#pages');
 const submit = document.querySelector('[type="submit"]');
-const displayForm = document.querySelector('#button')
+const displayForm = document.querySelector('#button');
 
 
 function Book(title, author, pages, read) {
@@ -35,8 +35,8 @@ function addBookToLibrary() {
 
 
 displayForm.addEventListener('click', () => {
-  form.style.display = 'grid'
-})
+  form.style.display = 'grid';
+});
 
 
 submit.addEventListener('click', (e) => {
@@ -47,9 +47,10 @@ submit.addEventListener('click', (e) => {
 });
 
 
+
 function displayBooks() {
-  const wrapper = document.querySelector('.card-wrapper')
-  wrapper.innerHTML = ''
+  const wrapper = document.querySelector('.card-wrapper');
+  wrapper.innerHTML = '';
   for (let i = 0; i < library.length; i++) {
     const book = library[i];
     const bookEl = document.createElement('div');
@@ -58,15 +59,17 @@ function displayBooks() {
         <p>Title: ${book.title}</p>
         <p>Author: ${book.author}</p>
         <p>Pages: ${book.pages}</p>
+        <button class='remove' onclick='removeBookFromLibrary(${i})'>Remove Book</button>
       </div>
     `;
-    wrapper.appendChild(bookEl)
+    wrapper.appendChild(bookEl);
   }
 }
 
-// function removeBookFromLibrary() {
-  
-// }
+function removeBookFromLibrary(index) {
+  library.splice(index, 1);
+  displayBooks();
+}
 
 
 
