@@ -47,7 +47,6 @@ submit.addEventListener('click', (e) => {
 });
 
 
-
 function displayBooks() {
   const wrapper = document.querySelector('.card-wrapper');
   wrapper.innerHTML = '';
