@@ -48,22 +48,20 @@ submit.addEventListener('click', (e) => {
 
 
 function displayBooks() {
-  const pTitle = document.createElement('p');
-  const pAuthor = document.createElement('p');
-  const pPages = document.createElement('p');
-  pTitle.textContent = title.value;
-  pAuthor.textContent = author.value; 
-  pPages.textContent = pages.value;
-  const container = document.createElement('div');
-  container.innerHTML = `
-  <div class=card>
-    <p>Title: ${title.value}</p>
-    <p>Author: ${author.value}</p>
-    <p>Pages: ${pages.value}</p>
-  </div>
-  `;
-  // container.append(pTitle, pAuthor, pPages)
-  document.body.append(container)
+  const wrapper = document.querySelector('.card-wrapper')
+  wrapper.innerHTML = ''
+  for (let i = 0; i < library.length; i++) {
+    const book = library[i];
+    const bookEl = document.createElement('div');
+    bookEl.innerHTML = `
+      <div class='card'>
+        <p>Title: ${book.title}</p>
+        <p>Author: ${book.author}</p>
+        <p>Pages: ${book.pages}</p>
+      </div>
+    `;
+    wrapper.appendChild(bookEl)
+  }
 }
 
 // function removeBookFromLibrary() {
