@@ -3,25 +3,61 @@ body {
   margin: 0;
   padding: 0;
   background: linear-gradient(to bottom, #cccaae 0%, #744360 100%) no-repeat;
-  height: 100vh;
+  height: 100%;
   font-family: Roboto;
 }
+
+
+.container {
+  display: grid;
+  grid-template-areas: '"header header header"';
+}
+
+
+.header {
+  height: 100px;
+  background: #744360;
+  text-align: center;
+}
+
 
 .form {
   display: grid;
   justify-content: center;
+  margin: 30px;
 }
 
-.display {
-  height: 100px;
-  width: 100px;
-}
+
+/* input:focus {
+  border: 4px solid blue;
+} */
+
 
 #button {
-  display: block;
   margin: 0 auto;
   background: #8d5275;
   padding: 10px;
   color: white;
   font-size: 16px;
+}
+
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3px;
+  justify-items: center;
+  align-items: center;
+  /* background: black; */
+}
+
+
+.card {
+  height: 200px;
+  width: 200px;
+  margin: 30px;
+  padding: 10px;
+  background: #cccaae;
+  border-top: 6px solid #744360;
+  border-radius: 6px;
 }
