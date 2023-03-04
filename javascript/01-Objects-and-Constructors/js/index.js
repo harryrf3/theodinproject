@@ -30,7 +30,7 @@ function addBookToLibrary() {
   const inputPages = pages.value;
   // let inputRead = getReadValue();
   const newBook = new Book(inputTitle, inputAuthor, inputPages);
-  library.push(newBook);
+  library.unshift(newBook);
 }
 
 
