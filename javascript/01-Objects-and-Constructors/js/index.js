@@ -33,7 +33,6 @@ function addBookToLibrary() {
   library.unshift(newBook);
 }
 
-window.onload(displayBooks())
 
 displayForm.addEventListener('click', () => {
   form.style.display = 'grid';
