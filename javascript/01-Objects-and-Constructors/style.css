@@ -18,6 +18,7 @@ body {
   height: 100px;
   background: #744360;
   text-align: center;
+  filter: drop-shadow(0px 1px 3px black);
 }
 
 
@@ -49,6 +50,7 @@ body {
   justify-items: center;
   align-items: center;
   background: #744360;
+  filter: drop-shadow(0px 1px 3px black);
 }
 
 
@@ -58,7 +60,6 @@ body {
   margin: 30px;
   padding: 10px;
   background: #cccaae;
-  border-top: 6px solid #744360;
   border-radius: 6px;
 }
 
