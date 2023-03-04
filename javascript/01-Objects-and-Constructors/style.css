@@ -15,7 +15,7 @@ body {
 
 
 .header {
-  height: 100px;
+  height: 75px;
   background: #744360;
   text-align: center;
   filter: drop-shadow(0px 1px 3px black);
@@ -62,6 +62,7 @@ body {
   background: #cccaae;
   border-radius: 6px;
 }
+
 
 .bar:before {
   height: 6px;
