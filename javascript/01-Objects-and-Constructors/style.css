@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background: #cccaae;
-  height: 2000px;
+  height: 100vh;
   font-family: Roboto;
 }
 
@@ -63,3 +63,11 @@ body {
   border-radius: 6px;
 }
 
+.bar:before {
+  height: 6px;
+  width: 200px;
+  background: #744360;
+  content: '';
+  position: absolute;
+  border-radius: 3px;
+}
