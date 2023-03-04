@@ -14,6 +14,7 @@ const author = form.querySelector('#author');
 const pages = form.querySelector('#pages');
 const submit = document.querySelector('[type="submit"]');
 const displayForm = document.querySelector('#button');
+const checkbox = document.querySelector('.checkbox')
 
 
 function Book(title, author, pages, read) {
@@ -28,8 +29,8 @@ function addBookToLibrary() {
   const inputTitle = title.value;
   const inputAuthor = author.value;
   const inputPages = pages.value;
-  // let inputRead = getReadValue();
-  const newBook = new Book(inputTitle, inputAuthor, inputPages);
+  const inputRead = getReadValue();
+  const newBook = new Book(inputTitle, inputAuthor, inputPages, inputRead);
   library.unshift(newBook);
 }
 
@@ -61,22 +62,20 @@ function displayBooks() {
         <p>Author: ${book.author}</p>
         <p>Pages: ${book.pages}</p>
         <button class='remove' onclick='removeBookFromLibrary(${i})'>Remove Book</button>
-        <input type="checkbox" id="switch" /><label for="switch">Read?</label>
+        <input type="checkbox" class="checkbox" onclick="if(!checkbox.checked){getReadValue()}"/><label for="checkbox">Read</label>
       </div>
     `;
     wrapper.appendChild(bookEl);
   }
 }
 
+
+function getReadValue() {
+  checkbox.checked = true;
+}
+
+
 function removeBookFromLibrary(index) {
   library.splice(index, 1);
   displayBooks();
 }
-
-
-
-
-
-
-// You can append to elements that aren't in the DOM yet just like you normally would. 
-// Then, when you're ready to append that element that's in memory to the page- just append it to any element that's already on the page!
