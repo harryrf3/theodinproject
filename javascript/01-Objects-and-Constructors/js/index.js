@@ -55,6 +55,7 @@ function displayBooks() {
     const bookEl = document.createElement('div');
     bookEl.innerHTML = `
       <div class='card'>
+      <span class='bar'></span>
         <p>Title: ${book.title}</p>
         <p>Author: ${book.author}</p>
         <p>Pages: ${book.pages}</p>
