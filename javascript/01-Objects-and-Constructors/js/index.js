@@ -3,7 +3,7 @@ let library = [
     title: 'Head First Javascript',
     author: 'Eric Freeman',
     pages: '700',
-    read: false
+    read: true
   },
 ];
 
@@ -14,7 +14,8 @@ const author = form.querySelector('#author');
 const pages = form.querySelector('#pages');
 const submit = document.querySelector('[type="submit"]');
 const displayForm = document.querySelector('#button');
-const checkbox = document.querySelector('.checkbox')
+const checkbox = document.querySelector('.checkbox');
+let isChecked;
 
 
 function Book(title, author, pages, read) {
@@ -24,12 +25,12 @@ function Book(title, author, pages, read) {
   this.read = read;
 }
 
-
 function addBookToLibrary() {
   const inputTitle = title.value;
   const inputAuthor = author.value;
   const inputPages = pages.value;
   const inputRead = getReadValue();
+  // console.log(inputRead)
   const newBook = new Book(inputTitle, inputAuthor, inputPages, inputRead);
   library.unshift(newBook);
 }
@@ -62,7 +63,7 @@ function displayBooks() {
         <p>Author: ${book.author}</p>
         <p>Pages: ${book.pages}</p>
         <button class='remove' onclick='removeBookFromLibrary(${i})'>Remove Book</button>
-        <input type="checkbox" class="checkbox" onclick="if(!checkbox.checked){getReadValue()}"/><label for="checkbox">Read</label>
+        <input type="checkbox" class="checkbox" onclick="getReadValue()" ${isChecked}/><label for="checkbox">Read</label>
       </div>
     `;
     wrapper.appendChild(bookEl);
@@ -71,7 +72,11 @@ function displayBooks() {
 
 
 function getReadValue() {
-  checkbox.checked = true;
+  if(document.querySelector('.checkbox:checked')) {
+  isChecked = 'checked';
+  } else {
+    isChecked = '';
+  }
 }
 
 
@@ -79,3 +84,8 @@ function removeBookFromLibrary(index) {
   library.splice(index, 1);
   displayBooks();
 }
+
+// ! BUG:
+// TODO: When checking the checkbox on the dropdown form
+// todo: and submitting:
+// todo: All checkboxes on cards become checked.
