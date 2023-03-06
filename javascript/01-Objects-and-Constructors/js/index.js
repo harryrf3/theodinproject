@@ -14,8 +14,7 @@ const author = form.querySelector('#author');
 const pages = form.querySelector('#pages');
 const submit = document.querySelector('[type="submit"]');
 const displayForm = document.querySelector('#button');
-const checkbox = document.querySelector('.checkbox');
-let isChecked;
+const checkbox = document.querySelector('.form-checkbox');
 
 
 function Book(title, author, pages, read) {
@@ -24,6 +23,7 @@ function Book(title, author, pages, read) {
   this.pages = pages;
   this.read = read;
 }
+
 
 function addBookToLibrary() {
   const inputTitle = title.value;
@@ -71,11 +71,13 @@ function displayBooks() {
 }
 
 
+let isChecked;
+
 function getReadValue() {
   if(document.querySelector('.checkbox:checked')) {
-  isChecked = 'checked';
+  return isChecked = 'checked';
   } else {
-    isChecked = '';
+    return isChecked = '';
   }
 }
 
