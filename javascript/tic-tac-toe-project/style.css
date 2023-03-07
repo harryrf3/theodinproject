@@ -1,0 +1,11 @@
+.container  {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid pink;
+}
+
+div {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+}
