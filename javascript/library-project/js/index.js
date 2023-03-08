@@ -30,10 +30,10 @@ function addBookToLibrary() {
   const inputAuthor = author.value;
   const inputPages = pages.value;
   const inputRead = getReadValue();
-  // console.log(inputRead)
   const newBook = new Book(inputTitle, inputAuthor, inputPages, inputRead);
   library.unshift(newBook);
 }
+
 
 
 displayForm.addEventListener('click', () => {
@@ -55,6 +55,7 @@ function displayBooks() {
   wrapper.innerHTML = '';
   for (let i = 0; i < library.length; i++) {
     const book = library[i];
+    // const isChecked = book.isChecked ? 'checked' : '';
     const bookEl = document.createElement('div');
     bookEl.innerHTML = `
       <div class='card'>
@@ -63,7 +64,7 @@ function displayBooks() {
         <p>Author: ${book.author}</p>
         <p>Pages: ${book.pages}</p>
         <button class='remove' onclick='removeBookFromLibrary(${i})'>Remove Book</button>
-        <input type="checkbox" class="checkbox" onclick="getReadValue()" ${isChecked}/><label for="checkbox">Read</label>
+        <input type="checkbox" class="checkbox" ${book.read ? 'checked' : ''}/><label for="checkbox">Read</label>
       </div>
     `;
     wrapper.appendChild(bookEl);
@@ -71,15 +72,10 @@ function displayBooks() {
 }
 
 
-let isChecked;
-
 function getReadValue() {
-  if(document.querySelector('.checkbox:checked')) {
-  return isChecked = 'checked';
-  } else {
-    return isChecked = '';
-  }
+  return checkbox.checked;
 }
+
 
 
 function removeBookFromLibrary(index) {
@@ -91,3 +87,19 @@ function removeBookFromLibrary(index) {
 // TODO: When checking the checkbox on the dropdown form
 // todo: and submitting:
 // todo: All checkboxes on cards become checked.
+
+/*
+
+Chat GPT Suggests (7 Mar 2023)
+
+Use ES6 syntax: Instead of using function constructors, consider using classes to create Book objects. This would make your code more readable and easier to maintain.
+
+Use event delegation: Instead of adding a click event listener to each book's remove button, consider using event delegation. This would attach the event listener to the container element and listen for events bubbling up from the remove button. This would make your code more efficient and prevent memory leaks.
+
+Add persistence: Currently, if the user refreshes the page, all of their library data will be lost. Consider using local storage or a database to persist the data. This would provide a better user experience and make your app more robust.
+
+Improve checkbox functionality: Currently, your code is not updating the read status of books correctly. Consider adding a method to update the read status of a book and attaching it to the onchange event of the checkbox. This would make your app more user-friendly and prevent bugs.
+
+Add error handling: Currently, your code does not handle errors well. Consider adding error handling for user input and other potential errors. This would make your app more reliable and prevent crashes.
+
+*/
