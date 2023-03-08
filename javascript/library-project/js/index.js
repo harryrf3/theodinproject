@@ -83,10 +83,6 @@ function removeBookFromLibrary(index) {
   displayBooks();
 }
 
-// ! BUG:
-// TODO: When checking the checkbox on the dropdown form
-// todo: and submitting:
-// todo: All checkboxes on cards become checked.
 
 /*
 
