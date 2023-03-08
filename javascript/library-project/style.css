@@ -22,7 +22,7 @@ body {
 }
 
 
-.form {
+#form {
   display: grid;
   justify-content: center;
   margin: 30px;

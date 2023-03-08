@@ -8,13 +8,14 @@ let library = [
 ];
 
 
-const form = document.querySelector('.form');
+const form = document.querySelector('#form');
 const title = form.querySelector('#title');
 const author = form.querySelector('#author');
 const pages = form.querySelector('#pages');
 const submit = document.querySelector('[type="submit"]');
 const displayForm = document.querySelector('#button');
-const checkbox = document.querySelector('.form-checkbox');
+const checkbox = document.querySelector('#form-checkbox');
+
 
 
 class Book {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,14 @@
   <link rel="stylesheet" href="style.css">
   <title>Book Library</title>
 </head>
+
 <body>
   <div class="container">
-    <header class=header><h1>Library</h1></header>
+    <header class=header>
+      <h1>Library</h1>
+    </header>
     <button id="button">Enter Book</button>
-    <form class="form" action="#" style="display: none;">
+    <form id="form" action="#" style="display: none;">
       <label for="title">Title</label>
       <input id="title" type="text" name="title" required>
       <label for="author">Author</label>
@@ -19,13 +23,14 @@
       <label for="pages">Pages</label>
       <input id="pages" type="number" name="pages" required>
       <label for="read">Read?</label>
-      <input type="checkbox" name="checkbox" class="form-checkbox">
+      <input id="form-checkbox" type="checkbox" name="checkbox">
       <input type="submit" value="Add Book">
     </form>
   </div>
   <div class="card-wrapper">
   </div>
+  <div id="popup" style="display: hidden;"></div>
   <script src="js/index.js"></script>
 </body>
-</html>
 
+</html>
