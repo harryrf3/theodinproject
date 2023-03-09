@@ -1,11 +1,43 @@
-.container  {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border: none;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-div {
-  height: 100px;
-  width: 100px;
-  border: 1px solid black;
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.board {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	width: 300px;
+	height: 300px;
+	background-color: #fff;
+}
+
+.square {
+	width: 100px;
+	height: 100px;
+	background-color: #eee;
+	border: 1px solid #000;
+	font-size: 72px;
+	text-align: center;
+	line-height: 100px;
+	cursor: pointer;
+}
+
+.square:hover {
+	background-color: #ddd;
+}
+
+.square.x {
+	color: #f00;
+}
+
+.square.o {
+	color: #00f;
 }
