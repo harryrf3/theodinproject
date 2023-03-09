@@ -15,7 +15,7 @@ const pages = form.querySelector('#pages');
 const submit = document.querySelector('[type="submit"]');
 const displayForm = document.querySelector('#button');
 const checkbox = document.querySelector('#form-checkbox');
-
+const popup = document.querySelector('#popup');
 
 
 class Book {

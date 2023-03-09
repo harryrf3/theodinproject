@@ -28,6 +28,7 @@ body {
   margin: 30px;
 }
 
+
 input:focus {
   outline: none;
   border: 2px solid #8d5275;
@@ -65,7 +66,7 @@ input:focus {
 }
 
 
-.bar:before {
+.bar::before {
   height: 6px;
   width: 200px;
   background: #744360;
