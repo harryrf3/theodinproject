@@ -1,19 +1,82 @@
-/*
+let currentPlayer = 'X';
+let gameEnded = false;
+const cells = document.querySelectorAll('.square');
 
-1. Decide which player goes first.
 
-2. On each turn, the player places their symbol ("X" or "O") on an empty square of the grid.
+function changePlayer() {
+  currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+}
 
-3. After each turn, check if the game is over:
 
-If there are three symbols in a row, horizontally, vertically, or diagonally, the game is over, and the player with the three symbols wins.
+function handleClick() {
+  if (gameEnded) {
+    return;
+  }
 
-If there are no more empty squares on the grid, the game is over, and the result is a tie.
+  if (this.textContent !== '') {
+    return;
+  }
 
-4. If the game is not over, switch to the other player and repeat steps 2-3.
+  this.textContent = currentPlayer;
 
-5. If the game is over, display the winner or the tie result.
+  if (checkWin()) {
+    document.querySelector("#message").textContent = `${currentPlayer} wins!`;
+  } else if (checkDraw()) {
+    document.querySelector('#message').textContent = "It's a draw!";
+    gameEnded = true;
+  } else {
+    changePlayer();
+  }
+}
 
-6. Ask the players if they want to play again. If they do, reset the grid and start over from step 2. If they don't, end the game.
+function checkWin() {
+  const winningCombinations = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6]
+  ];
 
-*/
+  for (let i = 0; i < winningCombinations.length; i++) {
+    const [a, b, c] = winningCombinations[i];
+
+    if (cells[a].textContent === "" ||
+      cells[b].textContent === "" ||
+      cells[c].textContent === "") {
+      continue;
+    }
+
+    if (cells[a].textContent === cells[b].textContent &&
+      cells[b].textContent === cells[c].textContent) {
+      return true;
+    }
+  }
+  return false;
+}
+
+function checkDraw() {
+  for (let i = 0; i < cells.length; i++) {
+    if (cells[i].textContent === "") {
+      return false;
+    }
+  }
+  return true;
+}
+
+
+function reset() {
+  for (let i = 0; i < cells.length; i++) {
+    cells[i].textContent = "";
+  }
+  document.querySelector("#message").textContent = "";
+  gameEnded = false;
+  currentPlayer = "X";
+}
+
+for (let i = 0; i < cells.length; i++) {
+  cells[i].addEventListener("click", handleClick);
+}
