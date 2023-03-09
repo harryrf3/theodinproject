@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -40,4 +40,10 @@
 
 .square.o {
 	color: #00f;
+}
+
+
+button, #message {
+  display: grid;
+  place-content: center;
 }
