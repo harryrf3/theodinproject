@@ -1,0 +1,5 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+}
