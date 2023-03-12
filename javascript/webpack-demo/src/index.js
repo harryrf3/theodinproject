@@ -1,3 +1,5 @@
+// https://webpack.js.org/guides/asset-management/
+
 import Icon from './harry-des.jpg';
 import _ from 'lodash';
 import './style.css';

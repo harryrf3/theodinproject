@@ -1,4 +1,13 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url('./ClimateCrisis-Regular.ttf');
+  font-size: 72px;
+  font-weight: 600;
+  font-style: normal;
+}
+
 .hello {
   color: red;
+  font-family: 'MyFont';
   background: url('./harry-des.jpg');
 } 
