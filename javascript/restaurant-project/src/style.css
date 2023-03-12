@@ -16,17 +16,14 @@ body {
 
 .header {
   grid-area: header;
-  background: coral;
 }
 
 .sidebar {
   grid-area: sidebar;
-  background: blueviolet;
 }
 
 .content {
   grid-area: content;
-  background: pink;
 }
 
 li {
