@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header"
+    "sidebar content content content content"
+    "sidebar content content content content"
+  ;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 80px auto auto;
+}
+
+.header {
+  grid-area: header;
+  background: coral;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: blueviolet;
+}
+
+.content {
+  grid-area: content;
+  background: pink;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
