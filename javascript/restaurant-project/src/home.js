@@ -1,13 +1,13 @@
 const container = document.querySelector('.container');
 function displayHomeHeader() {
   const header = document.createElement('header');
-  header.innerHTML = '<header class="header"><h3>Taco Bar</h3></header>';
-  container.appendChild(header);
+  header.setAttribute('class', 'header')
+  header.innerHTML = '<h3>Taco Bar</h3>';
+  return container.appendChild(header);
 }
 
 function displayHomeNav() {
   const nav = ['Home', 'Menu', 'Contact'];
-  // const container = document.querySelector('.container');
   const li = document.createElement('li');
   li.setAttribute('class', 'sidebar');
   nav.forEach(item => {
