@@ -1,6 +1,8 @@
 body {
   margin: 0;
   padding: 0;
+  background: url('./site-background.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 .container {
@@ -12,15 +14,18 @@ body {
   ;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 80px auto auto;
+  position: relative;
 }
 
 .header {
   grid-area: header;
+  border-bottom: 1px solid black;
 }
 
 .sidebar {
   grid-area: sidebar;
   display: grid;
+  height: 100vh;
 }
 
 .content {
