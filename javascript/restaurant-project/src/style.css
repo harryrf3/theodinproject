@@ -21,6 +21,7 @@ body {
   grid-area: header;
   text-align: center;
   color: white;
+  background: rgba(0, 0, 0, .70);
   border-bottom: 1px solid black;
 }
 
@@ -28,11 +29,14 @@ body {
   grid-area: sidebar;
   display: grid;
   height: 100vh;
-}
+  background: rgba(0, 0, 0, .70)
+} 
 
 .content {
   grid-area: content;
   color: white;
+  padding: 150px;
+  background-color: rgba(0, 0, 0, .70);
 }
 
 li {
