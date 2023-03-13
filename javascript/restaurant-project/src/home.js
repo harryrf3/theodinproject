@@ -9,7 +9,7 @@ function displayHomeNav() {
   const nav = ['Home', 'Menu', 'Contact'];
   // const container = document.querySelector('.container');
   const li = document.createElement('li');
-  li.setAttribute('class', 'sidebar')
+  li.setAttribute('class', 'sidebar');
   nav.forEach(item => {
     const a = document.createElement('a');
     a.textContent = item;
@@ -20,9 +20,9 @@ function displayHomeNav() {
 
 function displayHomeContent() {
   const content = document.createElement('main');
-  content.setAttribute('class', 'content')
-  content.innerHTML = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sapiente praesentium facere culpa et,';
-  container.appendChild(content)
+  content.setAttribute('class', 'content');
+  content.innerHTML = 'The best tacos on the internet! You can\'t eat them, but you can stare til your heart\'s content.';
+  return container.appendChild(content);
 }
 
 export { displayHomeHeader, displayHomeNav, displayHomeContent };
