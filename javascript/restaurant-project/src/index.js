@@ -1,4 +1,4 @@
-import { displayHomeHeader, displayHomeNav } from './home.js';
+import { displayHomeHeader, displayHomeNav, displayHomeContent } from './home.js';
 // import home from './home.js';
 // import './style.css';
 
@@ -8,6 +8,7 @@ console.log('hello from index.js');
 // home();
 displayHomeHeader();
 displayHomeNav();
+displayHomeContent();
 
 
 // TODO: Save for later for changing pages in nav
