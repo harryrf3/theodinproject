@@ -1,5 +1,6 @@
 import helloFromModule from './helloWorld.js';
 import home from './home.js'
+import './style.css'
 
 console.log('hello from index.js');
 
