@@ -9,7 +9,7 @@ function displayHomeHeader() {
 function displayHomeNav() {
   const nav = ['Home', 'Menu', 'Contact'];
   const li = document.createElement('li');
-  li.setAttribute('class', 'sidebar');
+  li.setAttribute('class', 'navbar');
   nav.forEach(item => {
     const a = document.createElement('a');
     a.textContent = item;
@@ -21,7 +21,7 @@ function displayHomeNav() {
 function displayHomeContent() {
   const content = document.createElement('main');
   content.setAttribute('class', 'content');
-  content.innerHTML = 'The best tacos on the internet! You can\'t eat them, but you can stare til your heart\'s content.';
+  content.innerHTML = 'The best tacos on the internet!<br/> You can\'t eat them, but you can stare til your heart\'s content.';
   return container.appendChild(content);
 }
 
