@@ -6,6 +6,7 @@ console.log('hello from index.js');
 
 // helloFromModule();
 // home();
+
 displayHomeHeader();
 displayHomeNav();
 displayHomeContent();

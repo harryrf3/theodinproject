@@ -40,17 +40,18 @@ body {
 
 
 .card {
-  background-color: black;
-  height: 100px;
-  width: 100px;
+  height: 400px;
+  width: 400px;
+  background-color: rgba(0, 0, 0, .5);
 }
 
 
 .content {
   grid-area: content;
   color: white;
-  padding: 150px;
-  background-color: rgba(0, 0, 0, .5);
+  /* padding: 150px; */
+  justify-content: center;
+  align-items: center;
 }
 
 
