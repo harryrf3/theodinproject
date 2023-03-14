@@ -1,7 +1,7 @@
 const container = document.querySelector('.container');
 
 
-function displayHome() {
+function displayMenu() {
   const card = document.createElement('div');
   card.setAttribute('class', 'card')
   const content = document.createElement('main');
@@ -11,4 +11,4 @@ function displayHome() {
   return content.appendChild(card);
 }
 
-export { displayHome };
+export { displayMenu };
