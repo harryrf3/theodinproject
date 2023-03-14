@@ -40,10 +40,6 @@ body {
   padding-top: 25px;
 }
 
-a:hover {
-  background: rgba(0, 0, 0, 0.90);
-}
-
 .content {
   grid-area: content;
   color: white;
