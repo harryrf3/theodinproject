@@ -120,6 +120,16 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/clearDisplay.js":
+/*!*****************************!*\
+  !*** ./src/clearDisplay.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"clearDisplay\": () => (/* binding */ clearDisplay)\n/* harmony export */ });\nconst container = document.querySelector('.container');\n\n\nfunction clearDisplay() {\n  const content = document.querySelector('.content');\n  container.removeChild(content);\n}\n\n\n\n//# sourceURL=webpack://restaurant-project/./src/clearDisplay.js?");
+
+/***/ }),
+
 /***/ "./src/displayHeader.js":
 /*!******************************!*\
   !*** ./src/displayHeader.js ***!
@@ -130,13 +140,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/displayMenu.js":
+/*!****************************!*\
+  !*** ./src/displayMenu.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"displayMenu\": () => (/* binding */ displayMenu)\n/* harmony export */ });\nconst container = document.querySelector('.container');\n\n\nfunction displayMenu() {\n  const card = document.createElement('div');\n  card.setAttribute('class', 'card')\n  const content = document.createElement('main');\n  content.setAttribute('class', 'content');\n  card.innerHTML = '<h3>MENU</h4>';\n  container.appendChild(content);\n  return content.appendChild(card);\n}\n\n\n\n//# sourceURL=webpack://restaurant-project/./src/displayMenu.js?");
+
+/***/ }),
+
 /***/ "./src/displayNav.js":
 /*!***************************!*\
   !*** ./src/displayNav.js ***!
   \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"displayNav\": () => (/* binding */ displayNav)\n/* harmony export */ });\nconst container = document.querySelector('.container');\n\n\nfunction displayNav() {\n  const nav = ['Home', 'Menu', 'Contact'];\n  const li = document.createElement('li');\n  li.setAttribute('class', 'navbar');\n  nav.forEach(item => {\n    const a = document.createElement('a');\n    a.textContent = item;\n    li.appendChild(a);\n  });\n  return container.appendChild(li);\n}\n\n\n\n//# sourceURL=webpack://restaurant-project/./src/displayNav.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"displayNav\": () => (/* binding */ displayNav)\n/* harmony export */ });\nconst container = document.querySelector('.container');\n\n\nfunction displayNav() {\n  const nav = ['Home', 'Menu', 'Contact'];\n  const li = document.createElement('li');\n  li.setAttribute('class', 'navbar');\n  nav.forEach(item => {\n    const a = document.createElement('a');\n    a.setAttribute('class', `${item}`)\n    a.textContent = item;\n    li.appendChild(a);\n  });\n  return container.appendChild(li);\n}\n\n\n\n//# sourceURL=webpack://restaurant-project/./src/displayNav.js?");
 
 /***/ }),
 
@@ -156,7 +176,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n/* harmony import */ var _displayHeader_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./displayHeader.js */ \"./src/displayHeader.js\");\n/* harmony import */ var _displayNav_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./displayNav.js */ \"./src/displayNav.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n\n\n\n\nconsole.log('hello from index.js');\n\n\n\n(0,_displayHeader_js__WEBPACK_IMPORTED_MODULE_1__.displayHeader)();\n(0,_displayNav_js__WEBPACK_IMPORTED_MODULE_2__.displayNav)();\n(0,_home_js__WEBPACK_IMPORTED_MODULE_0__.displayHome)();\n// TODO: displayMenu, displayContact\n\n\n// TODO: Save for later for changing pages in nav\n// const button = document.querySelector('test-button')\n// button.addEventListener('click', () => {\n//   helloFromModule();\n// })\n\n\n\n//# sourceURL=webpack://restaurant-project/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n/* harmony import */ var _displayMenu_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./displayMenu.js */ \"./src/displayMenu.js\");\n/* harmony import */ var _displayHeader_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./displayHeader.js */ \"./src/displayHeader.js\");\n/* harmony import */ var _displayNav_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./displayNav.js */ \"./src/displayNav.js\");\n/* harmony import */ var _clearDisplay_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./clearDisplay.js */ \"./src/clearDisplay.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n\n\n\n\n\n(0,_displayHeader_js__WEBPACK_IMPORTED_MODULE_2__.displayHeader)();\n(0,_displayNav_js__WEBPACK_IMPORTED_MODULE_3__.displayNav)();\n(0,_home_js__WEBPACK_IMPORTED_MODULE_0__.displayHome)();\n\nconsole.log('hello from index.js');\n\nconst Menu = document.querySelector('.Menu');\nconst Home = document.querySelector('.Home')\nconst Contact = document.querySelector('.Contact')\n\nMenu.addEventListener('click', () => {\n  ;(0,_clearDisplay_js__WEBPACK_IMPORTED_MODULE_4__.clearDisplay)();\n  (0,_displayMenu_js__WEBPACK_IMPORTED_MODULE_1__.displayMenu)();\n});\n\n\nHome.addEventListener('click', () => {\n  (0,_clearDisplay_js__WEBPACK_IMPORTED_MODULE_4__.clearDisplay)();\n  (0,_home_js__WEBPACK_IMPORTED_MODULE_0__.displayHome)();\n});\n\n\nContact.addEventListener('click', () => {\n  (0,_clearDisplay_js__WEBPACK_IMPORTED_MODULE_4__.clearDisplay)();\n  displayContact();\n});\n\n\n// TODO: displayMenu, displayContact\n\n\n// TODO: Save for later for changing pages in nav\n// const button = document.querySelector('test-button')\n// button.addEventListener('click', () => {\n//   helloFromModule();\n// })\n\n\n\n//# sourceURL=webpack://restaurant-project/./src/index.js?");
 
 /***/ }),
 
