@@ -1,14 +1,14 @@
-import { displayHomeHeader, displayHomeNav, displayHomeContent } from './home.js';
-// import home from './home.js';
+import { displayHomeNav, displayHomeContent } from './home.js';
+
+import { displayHeader } from './displayHeader.js';
+import { displayNav } from './displayNav.js';
 import './style.css';
 
 console.log('hello from index.js');
 
-// helloFromModule();
-// home();
 
-displayHomeHeader();
-displayHomeNav();
+displayHeader();
+displayNav();
 displayHomeContent();
 
 

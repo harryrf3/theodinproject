@@ -120,13 +120,33 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/displayHeader.js":
+/*!******************************!*\
+  !*** ./src/displayHeader.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"displayHeader\": () => (/* binding */ displayHeader)\n/* harmony export */ });\nconst container = document.querySelector('.container');\nfunction displayHeader() {\n  const header = document.createElement('header');\n  header.setAttribute('class', 'header')\n  header.innerHTML = '<h3>Taco Bar</h3>';\n  return container.appendChild(header);\n}\n\n\n\n\n//# sourceURL=webpack://restaurant-project/./src/displayHeader.js?");
+
+/***/ }),
+
+/***/ "./src/displayNav.js":
+/*!***************************!*\
+  !*** ./src/displayNav.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"displayNav\": () => (/* binding */ displayNav)\n/* harmony export */ });\nconst container = document.querySelector('.container');\n\n\nfunction displayNav() {\n  const nav = ['Home', 'Menu', 'Contact'];\n  const li = document.createElement('li');\n  li.setAttribute('class', 'navbar');\n  nav.forEach(item => {\n    const a = document.createElement('a');\n    a.textContent = item;\n    li.appendChild(a);\n  });\n  return container.appendChild(li);\n}\n\n\n\n//# sourceURL=webpack://restaurant-project/./src/displayNav.js?");
+
+/***/ }),
+
 /***/ "./src/home.js":
 /*!*********************!*\
   !*** ./src/home.js ***!
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"displayHomeContent\": () => (/* binding */ displayHomeContent),\n/* harmony export */   \"displayHomeHeader\": () => (/* binding */ displayHomeHeader),\n/* harmony export */   \"displayHomeNav\": () => (/* binding */ displayHomeNav)\n/* harmony export */ });\nconst container = document.querySelector('.container');\nfunction displayHomeHeader() {\n  const header = document.createElement('header');\n  header.setAttribute('class', 'header')\n  header.innerHTML = '<h3>Taco Bar</h3>';\n  return container.appendChild(header);\n}\n\nfunction displayHomeNav() {\n  const nav = ['Home', 'Menu', 'Contact'];\n  const li = document.createElement('li');\n  li.setAttribute('class', 'navbar');\n  nav.forEach(item => {\n    const a = document.createElement('a');\n    a.textContent = item;\n    li.appendChild(a);\n  });\n  return container.appendChild(li);\n}\n\nfunction displayHomeContent() {\n  const card = document.createElement('div');\n  card.setAttribute('class', 'card')\n  const content = document.createElement('main');\n  content.setAttribute('class', 'content');\n  card.innerHTML = '<h3>The best tacos on the internet!</h3><br/> <h4>You can\\'t eat them, but you can stare til your heart\\'s content.</h4>';\n  container.appendChild(content);\n  return content.appendChild(card);\n}\n\n\n\n//# sourceURL=webpack://restaurant-project/./src/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"displayHomeContent\": () => (/* binding */ displayHomeContent)\n/* harmony export */ });\nconst container = document.querySelector('.container');\n\n\nfunction displayHomeContent() {\n  const card = document.createElement('div');\n  card.setAttribute('class', 'card')\n  const content = document.createElement('main');\n  content.setAttribute('class', 'content');\n  card.innerHTML = '<h3>The best tacos on the internet!</h3><br/> <h4>You can\\'t eat them, but you can stare til your heart\\'s content.</h4>';\n  container.appendChild(content);\n  return content.appendChild(card);\n}\n\n\n\n//# sourceURL=webpack://restaurant-project/./src/home.js?");
 
 /***/ }),
 
@@ -136,7 +156,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n// import home from './home.js';\n\n\nconsole.log('hello from index.js');\n\n// helloFromModule();\n// home();\n\n(0,_home_js__WEBPACK_IMPORTED_MODULE_0__.displayHomeHeader)();\n(0,_home_js__WEBPACK_IMPORTED_MODULE_0__.displayHomeNav)();\n(0,_home_js__WEBPACK_IMPORTED_MODULE_0__.displayHomeContent)();\n\n\n// TODO: Save for later for changing pages in nav\n// const button = document.querySelector('test-button')\n// button.addEventListener('click', () => {\n//   helloFromModule();\n// })\n\n\n\n//# sourceURL=webpack://restaurant-project/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n/* harmony import */ var _displayHeader_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./displayHeader.js */ \"./src/displayHeader.js\");\n/* harmony import */ var _displayNav_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./displayNav.js */ \"./src/displayNav.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n\n\n\n\nconsole.log('hello from index.js');\n\n\n(0,_displayHeader_js__WEBPACK_IMPORTED_MODULE_1__.displayHeader)();\n(0,_displayNav_js__WEBPACK_IMPORTED_MODULE_2__.displayNav)();\n(0,_home_js__WEBPACK_IMPORTED_MODULE_0__.displayHomeContent)();\n\n\n// TODO: Save for later for changing pages in nav\n// const button = document.querySelector('test-button')\n// button.addEventListener('click', () => {\n//   helloFromModule();\n// })\n\n\n\n//# sourceURL=webpack://restaurant-project/./src/index.js?");
 
 /***/ }),
 
