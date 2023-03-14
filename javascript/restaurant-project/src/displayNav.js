@@ -7,6 +7,7 @@ function displayNav() {
   li.setAttribute('class', 'navbar');
   nav.forEach(item => {
     const a = document.createElement('a');
+    a.setAttribute('class', `${item}`)
     a.textContent = item;
     li.appendChild(a);
   });
