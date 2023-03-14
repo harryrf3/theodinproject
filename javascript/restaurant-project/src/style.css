@@ -1,9 +1,11 @@
 body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   background: url('./site-background.jpg') no-repeat center center fixed;
   background-size: cover;
 }
+
 
 .container {
   display: grid;
@@ -12,23 +14,19 @@ body {
   "sidebar sidebar sidebar sidebar sidebar"
   "content content content content content"
   ;
-  /* grid-template-areas:
-    "header header header header header"
-    "sidebar content content content content"
-    "sidebar content content content content"
-  ; */
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 80px 70px 500px;
-  /* position: relative; */
 }
+
 
 .header {
   grid-area: header;
   text-align: center;
   color: white;
-  background: rgba(0, 0, 0, .90);
+  background: rgba(0, 0, 0, .80);
   border-bottom: 1px solid black;
 }
+
 
 .navbar {
   grid-area: sidebar;
@@ -40,24 +38,34 @@ body {
   padding-top: 25px;
 }
 
-a:hover {
-  cursor: pointer;
+
+.card {
+  background-color: black;
 }
+
 
 .content {
   grid-area: content;
   color: white;
   padding: 150px;
-  background-color: rgba(0, 0, 0, .60);
+  background-color: rgba(0, 0, 0, .5);
 }
 
 
 li {
   list-style-type: none;
   gap: 100px;
+  font-size: 24px;
 }
+
 
 a {
   text-decoration: none;
   color: white;
+}
+
+
+a:hover {
+  cursor: pointer;
+  color: #FE9C03;
 }
