@@ -40,6 +40,10 @@ body {
   padding-top: 25px;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 .content {
   grid-area: content;
   color: white;
