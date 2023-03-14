@@ -18,8 +18,8 @@ body {
     "sidebar content content content content"
   ; */
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 80px 70px auto;
-  position: relative;
+  grid-template-rows: 80px 70px 500px;
+  /* position: relative; */
 }
 
 .header {
@@ -37,8 +37,13 @@ body {
   align-items: top;
   justify-content: center;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.70)
-} 
+  background: rgba(0, 0, 0, 0.60);
+  padding-top: 25px;
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0.90);
+}
 
 .content {
   grid-area: content;

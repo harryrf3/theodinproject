@@ -21,7 +21,7 @@ function displayHomeNav() {
 function displayHomeContent() {
   const content = document.createElement('main');
   content.setAttribute('class', 'content');
-  content.innerHTML = 'The best tacos on the internet!<br/> You can\'t eat them, but you can stare til your heart\'s content.';
+  content.innerHTML = '<h3>The best tacos on the internet!</h3><br/> <h4>You can\'t eat them, but you can stare til your heart\'s content.</h4>';
   return container.appendChild(content);
 }
 
