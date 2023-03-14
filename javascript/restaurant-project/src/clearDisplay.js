@@ -2,7 +2,8 @@ const container = document.querySelector('.container');
 
 
 function clearDisplay() {
-  return document.body.innerHTML = ''
+  const content = document.querySelector('.content');
+  container.removeChild(content);
 }
 
 export { clearDisplay };
