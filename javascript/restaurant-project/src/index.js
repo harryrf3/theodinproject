@@ -1,6 +1,6 @@
 import { displayHomeHeader, displayHomeNav, displayHomeContent } from './home.js';
 // import home from './home.js';
-// import './style.css';
+import './style.css';
 
 console.log('hello from index.js');
 
