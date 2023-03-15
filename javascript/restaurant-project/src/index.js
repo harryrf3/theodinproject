@@ -1,9 +1,9 @@
-import { displayHome } from './displayHome.js';
-import { displayMenu } from './displayMenu.js';
-import { displayContact } from './displayContact.js';
-import { displayHeader } from './displayHeader.js';
-import { displayNav } from './displayNav.js';
-import { clearDisplay } from './clearDisplay.js';
+import { displayHome } from './modules/displayHome.js';
+import { displayMenu } from './modules/displayMenu.js';
+import { displayContact } from './modules/displayContact.js';
+import { displayHeader } from './modules/displayHeader.js';
+import { displayNav } from './modules/displayNav.js';
+import { clearDisplay } from './modules/clearDisplay.js';
 import './style.css';
 
 
