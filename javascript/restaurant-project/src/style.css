@@ -50,6 +50,7 @@ body {
   justify-content: center;
 }
 
+
 .card > img {
   padding: 10px 10px;
   width: 100%;
@@ -58,6 +59,7 @@ body {
   object-position: center;
   display: block;
 }
+
 
 .card > img:hover {
   scale: 1.5;
