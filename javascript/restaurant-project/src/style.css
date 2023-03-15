@@ -42,12 +42,17 @@ body {
 .card {
   display: grid;
   margin: 30px auto;
-  height: 400px;
+  min-height: 400px;
   width: 600px;
   background-color: rgba(0, 0, 0, .70);
   text-align: center;
   align-items: center;
   justify-content: center;
+}
+
+.card > img {
+  width: 300px;
+  height: 300px;
 }
 
 
