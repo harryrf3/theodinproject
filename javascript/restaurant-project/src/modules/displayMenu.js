@@ -11,8 +11,6 @@ function displayMenu() {
   card.setAttribute('class', 'card');
   const content = document.createElement('main');
   content.setAttribute('class', 'content');
-  card.innerHTML = '<h3>MENU</h4>';
-
   imageUrls.forEach(url => {
     const image = new Image();
     image.src = url;
