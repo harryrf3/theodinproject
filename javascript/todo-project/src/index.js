@@ -1,18 +1,12 @@
-// console.log('hello')
+console.log('hello from index.js');
 
-// const content = document.querySelector('.content');
-// content.innerHTML = 'hello'
-// document.body.appendChild(content)
+import {createTodo} from './modules/createTodo.js';
+import {displayHeader} from './modules/displayHeader.js';
+import './style.css'
 
-function createTodo (title, description, dueDate, priority) {
-  return {
-    title,
-    description,
-    dueDate,
-    priority
-  }
-}
+displayHeader();
 
-const newTodo1 = createTodo('testTitle', 'testDescription', 'testDate', 'testPriority')
+createTodo()
 
-console.log(newTodo1)
+
+console.log(newTodo1);
