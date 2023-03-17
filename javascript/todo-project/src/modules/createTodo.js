@@ -1,14 +1,14 @@
-function createTodo (title, description, dueDate, priority) {
+function createTodo(title, description, dueDate, priority) {
   return {
     title,
     description,
     dueDate,
     priority
-  }
+  };
 }
 
-const newTodo1 = createTodo('testTitle', 'testDescription', 'testDate', 'testPriority')
+const newTodo1 = createTodo('testTitle', 'testDescription', 'testDate', 'testPriority');
 
-console.log(newTodo1)
+console.log(newTodo1);
 
-export { createTodo }
+export { createTodo };
