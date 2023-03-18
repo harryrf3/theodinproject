@@ -11,10 +11,17 @@ body {
   "aside main main"
   "aside main main"
   ;
+  grid-template-rows: 100px 100vh auto;
 }
 
 .header {
   grid-area: header;
   height: 100px;
+  background-color: black;
+}
+
+.aside {
+  grid-area: aside;
+  width: 100px;
   background-color: black;
 }
