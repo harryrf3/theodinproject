@@ -27,5 +27,14 @@ body {
 
 .main {
   grid-area: main;
+  display: grid;
   background-color: #DDDDDD;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo {
+  background: #191919;
+  height: 400px;
+  width: 400px;
 }
