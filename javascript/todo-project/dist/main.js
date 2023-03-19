@@ -16,7 +16,7 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"body {\\n  margin: 0;\\n  padding: 0;\\n}\\n\\n.container {\\n  display: grid;\\n  grid-template-areas: \\n  \\\"header header header\\\"\\n  \\\"aside main main\\\"\\n  \\\"aside main main\\\"\\n  \\\"aside main main\\\"\\n  ;\\n}\\n\\n.header {\\n  grid-area: header;\\n  height: 100px;\\n  background-color: black;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://todo-project/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"body {\\n  box-sizing: border-box;\\n  margin: 0;\\n  padding: 0;\\n}\\n\\n.container {\\n  display: grid;\\n  grid-template-areas: \\n  \\\"header header header\\\"\\n  \\\"aside main main\\\"\\n  \\\"aside main main\\\"\\n  \\\"aside main main\\\"\\n  ;\\n  grid-template-columns: 1fr 1fr 1fr ;\\n  grid-template-rows: 100px 100vh auto;\\n}\\n\\n.header {\\n  grid-area: header;\\n  background-color: #121212;\\n}\\n\\n.aside {\\n  grid-area: aside;\\n  background-color: #191919;\\n}\\n\\n.main {\\n  grid-area: main;\\n  display: grid;\\n  background-color: #DDDDDD;\\n  justify-content: center;\\n  align-items: center;\\n}\\n\\n.todo {\\n  background: #191919;\\n  height: 400px;\\n  width: 400px;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://todo-project/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -116,7 +116,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_createTodo_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/createTodo.js */ \"./src/modules/createTodo.js\");\n/* harmony import */ var _modules_displayHeader_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/displayHeader.js */ \"./src/modules/displayHeader.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\nconsole.log('hello from index.js');\n\n\n\n\n\n(0,_modules_displayHeader_js__WEBPACK_IMPORTED_MODULE_1__.displayHeader)();\n\n(0,_modules_createTodo_js__WEBPACK_IMPORTED_MODULE_0__.createTodo)()\n\n\nconsole.log(newTodo1);\n\n//# sourceURL=webpack://todo-project/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_createTodo_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/createTodo.js */ \"./src/modules/createTodo.js\");\n/* harmony import */ var _modules_displayHeader_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/displayHeader.js */ \"./src/modules/displayHeader.js\");\n/* harmony import */ var _modules_displayAside_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/displayAside.js */ \"./src/modules/displayAside.js\");\n/* harmony import */ var _modules_displayMain_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/displayMain.js */ \"./src/modules/displayMain.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\nconsole.log('hello from index.js');\n\n\n\n\n\n\n\n(0,_modules_displayHeader_js__WEBPACK_IMPORTED_MODULE_1__.displayHeader)();\n(0,_modules_displayAside_js__WEBPACK_IMPORTED_MODULE_2__.displayAside)();\n(0,_modules_displayMain_js__WEBPACK_IMPORTED_MODULE_3__.displayMain)();\n\n(0,_modules_createTodo_js__WEBPACK_IMPORTED_MODULE_0__.createTodo)();\n\n//# sourceURL=webpack://todo-project/./src/index.js?");
 
 /***/ }),
 
@@ -126,7 +126,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
   \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createTodo\": () => (/* binding */ createTodo)\n/* harmony export */ });\nfunction createTodo(title, description, dueDate, priority) {\n  return {\n    title,\n    description,\n    dueDate,\n    priority\n  };\n}\n\nconst newTodo1 = createTodo('testTitle', 'testDescription', 'testDate', 'testPriority');\n\nconsole.log(newTodo1);\n\n\n\n//# sourceURL=webpack://todo-project/./src/modules/createTodo.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createTodo\": () => (/* binding */ createTodo)\n/* harmony export */ });\nfunction createTodo(title, description, dueDate, priority) {\n  return {\n    title,\n    description,\n    dueDate,\n    priority\n  };\n}\n\n\n\n\n//# sourceURL=webpack://todo-project/./src/modules/createTodo.js?");
+
+/***/ }),
+
+/***/ "./src/modules/displayAside.js":
+/*!*************************************!*\
+  !*** ./src/modules/displayAside.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"displayAside\": () => (/* binding */ displayAside)\n/* harmony export */ });\nconst container = document.querySelector('.container');\n\nfunction displayAside() {\n  const aside = document.createElement('aside');\n  aside.setAttribute('class', 'aside')\n  container.appendChild(aside);\n}\n\n\n\n//# sourceURL=webpack://todo-project/./src/modules/displayAside.js?");
 
 /***/ }),
 
@@ -137,6 +147,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"displayHeader\": () => (/* binding */ displayHeader)\n/* harmony export */ });\nconst container = document.querySelector('.container');\nconsole.log('hello from displayHeader.js');\n\nfunction displayHeader() {\n  const header = document.createElement('header')\n  header.setAttribute('class', 'header')\n  container.appendChild(header)\n}\n\n\n\n//# sourceURL=webpack://todo-project/./src/modules/displayHeader.js?");
+
+/***/ }),
+
+/***/ "./src/modules/displayMain.js":
+/*!************************************!*\
+  !*** ./src/modules/displayMain.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"displayMain\": () => (/* binding */ displayMain)\n/* harmony export */ });\nconst container = document.querySelector('.container')\n\nfunction displayMain() {\n  const main = document.createElement('main')\n  main.setAttribute('class', 'main')\n  const todo = document.createElement('div')\n  todo.setAttribute('class', 'todo')\n  main.appendChild(todo)\n  container.appendChild(main)\n}\n\n\n\n//# sourceURL=webpack://todo-project/./src/modules/displayMain.js?");
 
 /***/ })
 
